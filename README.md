@@ -1,23 +1,42 @@
-# Euler-junior
+# Euler-junior_NXP
 
+## openEluer Embedded BSP雪球计划
 #### 介绍
-openEluer Embedded BSP雪球计划
 
-#### 软件架构
-软件架构说明
+> 旨在对南向BSP的覆盖活动，目的是扩大openEuler对南向bsp的支持范围，“雪球计划”，寓意openEuler将一步步强大，最终成为国内乃至国际顶流嵌入式操作系统
+
+ **本小组研究：NXP** 
+
+![NXP](image%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-02-01%20152323.png)
+
+## 项目要求
+### 1.软件能合入master
+### 2.基本镜像要能运行                                                                            
 
 
-#### 安装教程
+## 项目成员： @puai 、魏伟、 @DarrenPig 
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
 
-#### 使用说明
+### 项目进程：
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+- 1.30    建立群聊
+- 2.1     sig组会议
+
+
+###  资料共享：
+
+- [openEuler Embedded在线文档](https://openeuler.gitee.io/yocto-meta-openeuler/master/introduction/index.html)
+- [SIG的双周议题](https://etherpad.openeuler.org/p/sig-Yocto-meetings)
+- 2.1组会笔记
+
+### 个人进度
+
+#### DarrenPig
+- 1.29 ubuntu 的镜像 VM 安装
+- 1.30 啃 yocto 的文档，本地部署（Day 1）
+- 1.31 bitbake、vim、poky（Day 2）
+- 2.1  Yocto部署笔记、sig组会（Day 3）
+
 
 #### 参与贡献
 
@@ -27,11 +46,4 @@ openEluer Embedded BSP雪球计划
 4.  新建 Pull Request
 
 
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+#### 维护日志：2.1 @DarrenPig 
