@@ -80,6 +80,8 @@ Soc支持， **米尔科技** 赞助：选择硬件板子——》issues统计Gi
 
 
 ## 维护日志：2.1 @DarrenPig Readme、两份笔记(vim环境变量、2.1组会笔记)
+## 维护日志：2.4 @DarrenPig Readme 报名信息
+2.
 ![已有文件](image/image.png)
 ---
 
