@@ -3,7 +3,7 @@
 ## openEluer Embedded BSP雪球计划
 #### 介绍
 
-> 旨在对南向BSP的覆盖活动，目的是扩大openEuler对南向bsp的支持范围，“雪球计划”，寓意openEuler将一步步强大，最终成为国内乃至国际顶流嵌入式操作系统
+> 旨在对南向BSP的覆盖活动，目的是扩大openEuler对南向bsp的支持范围，“[雪球计划](https://gitee.com/openeuler/yocto-meta-openeuler/issues/I90DOU#comment-loadder)”，寓意openEuler将一步步强大，最终成为国内乃至国际顶流嵌入式操作系统
 
  **本小组研究：NXP** 
 
@@ -15,14 +15,14 @@
 
 ## 项目成员：  @puai 、@wei-app  、@DarrenPig 
 
-
+![项目成员](image/Screenshot%202024-02-04%20185515.png)
 ### 项目进程：
 
 - 1.30    建立群聊
 - 2.1     sig组会议，创建仓库
+- 2.4     填写报名表
 
-
-###  资料共享：
+##  资料共享：
 
 - [openEuler Embedded在线文档](https://openeuler.gitee.io/yocto-meta-openeuler/master/introduction/index.html)
 - [SIG的双周议题](https://etherpad.openeuler.org/p/sig-Yocto-meetings)
@@ -38,7 +38,7 @@
 - 2.1  [Yocto部署笔记](https://gitee.com/pai_666/euler-junior/blob/master/Files/1.31Ubuntu%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8FShell%E3%80%81vim.pdf)、sig组会（Day 3）
 ##### 目标：本周六`2.3`之前完成Yocto部署
 
-##### - [ ]  SSH隧穿VM上的Ubuntu的Shell会不会更方便一些？  
+##### - [*]  SSH隧穿VM上的Ubuntu的Shell会不会更方便一些？  
 
 
 #### 大家可以在这补充...
