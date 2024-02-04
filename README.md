@@ -5,7 +5,7 @@
 
 > 旨在对南向BSP的覆盖活动，目的是扩大openEuler对南向bsp的支持范围，“[雪球计划](https://gitee.com/openeuler/yocto-meta-openeuler/issues/I90DOU#comment-loadder)”，寓意openEuler将一步步强大，最终成为国内乃至国际顶流嵌入式操作系统
 
- **本小组研究：NXP** 
+ ### **本小组研究：NXP** 
 
 ![NXP板子](image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-02-01%20152323.png)
 ## 项目要求
@@ -32,18 +32,18 @@
 ### 个人进度
 
 #### DarrenPig
-- 1.29 ubuntu 的镜像[ubuntu-22.04.3-desktop-amd64] VMware 安装, [shell环境学习](https://blog.csdn.net/cnds123/article/details/107427030)
-- 1.30 啃 yocto 的文档，本地部署[~/.bashrc-Linux环境变量](https://zhuanlan.zhihu.com/p/359354934)（Day 1）
-- 1.31 bitbake、[vim](https://www.runoob.com/linux/linux-vim.html)、poky（Day 2）
-- 2.1  [Yocto部署笔记](https://gitee.com/pai_666/euler-junior/blob/master/Files/1.31Ubuntu%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8FShell%E3%80%81vim.pdf)、sig组会（Day 3）
-- 2.3  code、SSH到Ubuntu环境
-- 2.4  [报名表](https://gitee.com/openeuler/yocto-meta-openeuler/issues/I90DOU#comment-loadder)、Yocto文档到构建
+- 1.29 ✅ubuntu 的镜像[ubuntu-22.04.3-desktop-amd64] VMware 安装, [shell环境学习](https://blog.csdn.net/cnds123/article/details/107427030)
+- 1.30 ✅啃 yocto 的文档，本地部署[~/.bashrc-Linux环境变量](https://zhuanlan.zhihu.com/p/359354934)（Day 1）
+- 1.31 ✅bitbake、[vim](https://www.runoob.com/linux/linux-vim.html)、poky（Day 2）
+- 2.1  ✅[Yocto部署笔记](https://gitee.com/pai_666/euler-junior/blob/master/Files/1.31Ubuntu%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8FShell%E3%80%81vim.pdf)、sig组会（Day 3）
+- 2.3  ✅code、❌SSH到Ubuntu环境
+- 2.4  ✅[报名表](https://gitee.com/openeuler/yocto-meta-openeuler/issues/I90DOU#comment-loadder)、Yocto文档到构建
 ##### 目标：本周六`2.3`之前完成Yocto部署
 
 ##### -[x]  SSH隧穿VM上的Ubuntu的Shell会不会更方便一些？  
 
 
-#### 大家可以在这补充...
+#### ✅大家可以在这补充...
 
 
 ---
@@ -83,7 +83,7 @@ Soc支持， **米尔科技** 赞助：选择硬件板子——》issues统计Gi
 
 ## 维护日志：2.1 @DarrenPig Readme、两份笔记(vim环境变量、2.1组会笔记)
 ## 维护日志：2.4 @DarrenPig Readme 报名信息
-2.
+✅ ✅ ❌
 ![已有文件](image/image.png)
 ---
 
