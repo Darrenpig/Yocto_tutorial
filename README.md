@@ -36,9 +36,11 @@
 - 1.30 啃 yocto 的文档，本地部署[~/.bashrc-Linux环境变量](https://zhuanlan.zhihu.com/p/359354934)（Day 1）
 - 1.31 bitbake、[vim](https://www.runoob.com/linux/linux-vim.html)、poky（Day 2）
 - 2.1  [Yocto部署笔记](https://gitee.com/pai_666/euler-junior/blob/master/Files/1.31Ubuntu%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8FShell%E3%80%81vim.pdf)、sig组会（Day 3）
+- 2.3  code、SSH到Ubuntu环境
+- 2.4  [报名表](https://gitee.com/openeuler/yocto-meta-openeuler/issues/I90DOU#comment-loadder)、Yocto文档到构建
 ##### 目标：本周六`2.3`之前完成Yocto部署
 
-##### - [*]  SSH隧穿VM上的Ubuntu的Shell会不会更方便一些？  
+##### -[x]  SSH隧穿VM上的Ubuntu的Shell会不会更方便一些？  
 
 
 #### 大家可以在这补充...
