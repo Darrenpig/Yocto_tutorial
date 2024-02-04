@@ -27,6 +27,7 @@
 - [openEuler Embedded在线文档](https://openeuler.gitee.io/yocto-meta-openeuler/master/introduction/index.html)
 - [SIG的双周议题](https://etherpad.openeuler.org/p/sig-Yocto-meetings)
 - [2.1组会笔记](https://gitee.com/pai_666/euler-junior/tree/master/Files)
+- [MYS-6ulx-io产品手册](https://www.myir-tech.com/down/manual/NXP/MYS-6ulx-iot_product_manual.pdf)
 
 ### 个人进度
 
