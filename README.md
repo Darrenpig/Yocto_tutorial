@@ -11,6 +11,8 @@
 |MYS-6ULX|NXP|i.MX6UL/i.MX6ULL|米尔科技|@DarrenPig| | | |
 |MYS-6ULX|NXP|i.MX6UL/i.MX6ULL|米尔科技|@puai| | | |
 |MYS-6ULX|NXP|i.MX6UL/i.MX6ULL|米尔科技|@wei-app| | | |
+
+
 ![NXP板子](image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-02-01%20152323.png)
 ## 项目要求
 ### 1.软件能合入master
