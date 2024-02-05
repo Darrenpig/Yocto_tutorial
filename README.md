@@ -72,16 +72,16 @@
  **openEuler/yocto-meta-openEuler
 双周例会：** 
 ### 一、近期进展
-- isula=》systemd解耦
-			==〉host OS / 容器OS
+- isula —→ systemd解耦
+			—→ host OS / 容器OS
 					（容器相关的生态需求支持）
-- openEuler==以前——包dnf——数据源不同源==》服务器端的数据
+- openEuler —→ 以前——包dnf——数据源不同源 → 服务器端的数据
 - 希望未来以image镜像为载体～容器为载体|通过rpm包更多向image发展
 - oe-build——>图形化选择
 - bsp雪球计划
 ### 二、isula基本使用
-Embedded——》OSI容器引擎
-				==〉CLI、CRI管理操作接口
+Embedded —→ OSI容器引擎
+				—→ CLI、CRI管理操作接口
 - oe-build构建标准镜像
 - isula容器引擎
 #Step 1
@@ -89,15 +89,15 @@ Embedded——》OSI容器引擎
 - 虚拟机OS（局域网）
 ......
 
-### 三、【重点】 **雪球计划 南向bsp**  支持范围（bsp-都有环境==〉yocto）
-Soc支持， **米尔科技** 赞助：选择硬件板子——》issues统计Gitee ID
-- ——〉可以传递）
--  **雪球计划——〉预计持续到5月** 
+### 三、【重点】 **雪球计划 南向bsp**  支持范围（bsp-都有环境 —→ yocto）
+Soc支持， **米尔科技** 赞助：选择硬件板子 —→ issues统计Gitee ID
+- → 可以传递）
+-  **雪球计划 → 预计持续到5月** 
 ## 项目要求：
-### - 合入  master  主线——〉代码
-### - 基本镜像可以运行 ——〉硬件
+### - 合入  master  主线 —→ 代码
+### - 基本镜像可以运行 —→ 硬件
 
-- [ ] 版本，内核（不一定统一的要求下）==〉先满足上述两个要求。
+- [ ] 版本，内核（不一定统一的要求下）—→ 先满足上述两个要求。
 
 
 ## 维护日志：2.1 @DarrenPig Readme、两份笔记(vim环境变量、2.1组会笔记)
