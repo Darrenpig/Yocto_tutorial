@@ -1,16 +1,15 @@
 # Euler-junior_NXP
 ![NXP](image/NXP.png)
-## openEluer Embedded BSP雪球计划
+## openEluer Embedded BSP[雪球计划](https://gitee.com/openeuler/yocto-meta-openeuler/issues/I90DOU#comment-loadder)
 #### 介绍
 
-> 旨在对南向BSP的覆盖活动，目的是扩大openEuler对南向bsp的支持范围，“[雪球计划](https://gitee.com/openeuler/yocto-meta-openeuler/issues/I90DOU#comment-loadder)”，寓意openEuler将一步步强大，最终成为国内乃至国际顶流嵌入式操作系统
+> 旨在对南向BSP的覆盖活动，目的是扩大openEuler对南向bsp的支持范围， “雪球计划”，寓意openEuler将一步步强大，最终成为国内乃至国际顶流嵌入式操作系统
 
  ### **本小组研究：NXP** 
 | SOC型号 | soc厂商 | bsp型号 | 赞助商 | gitee id | 进度 | 完成时间 | 备注 |
 |-------|-------|-------|-----|----------|----|------|----|
-|MYS-6ULX|NXP|i.MX6UL/i.MX6ULL|米尔科技|@DarrenPig| | | |
-|MYS-6ULX|NXP|i.MX6UL/i.MX6ULL|米尔科技|@puai| | | |
-|MYS-6ULX|NXP|i.MX6UL/i.MX6ULL|米尔科技|@wei-app| | | |
+|i.MX 6ULL|NXP|MYD-Y6ULY2-V2-4E512D-50-I|米尔科技|@DarrenPig,@puai,@wei-app | | | |
+|i.MX 8M Plus|NXP|MYD-JX8MPQ-8E2D-160-I|米尔科技|puai | | | |
 
 
 ![NXP板子](image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-02-01%20152323.png)
@@ -90,7 +89,7 @@ Embedded —→ OSI容器引擎
 ......
 
 ### 三、【重点】 **雪球计划 南向bsp**  支持范围（bsp-都有环境 —→ yocto）
-Soc支持， **米尔科技** 赞助：选择硬件板子 —→ issues统计Gitee ID
+Soc支持， **[米尔科技](https://www.myir-tech.com%2Fproduct%2Findex.asp%3Fanclassid%3D100)** 赞助：选择硬件板子 —→ issues统计Gitee ID
 - → 可以传递）
 -  **雪球计划 → 预计持续到5月** 
 ## 项目要求：
@@ -115,3 +114,6 @@ pip3 install sphinx_rtd_theme sphinx_multiversion sphinx_tabs -i https://pypi.tu
 ```
 装上sphinx环境，去拉社区文档仓（docs），就可以make html，生成文档了
 > 1.30 @puai 社区文档的用法
+
+## 24.03这个版本我们贡献扎实点，未来6年都这个版本！
+> 1.30 @puai 大体进展是24.03开始
