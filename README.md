@@ -33,7 +33,7 @@
 - [SIG的双周议题](https://etherpad.openeuler.org/p/sig-Yocto-meetings)
 - [2.1组会笔记](https://gitee.com/pai_666/euler-junior/tree/master/Files)
 - [MYS-6ulx-io产品手册](https://www.myir-tech.com/down/manual/NXP/MYS-6ulx-iot_product_manual.pdf)
-
+- [MYD-JX8MMA7产品介绍](https://www.myir-tech.com/public/files/MYD-JX8MMA7%E4%BA%A7%E5%93%81%E4%BB%8B%E7%BB%8D-V1.0.pdf)
 ### 个人进度
 
 #### DarrenPig
@@ -62,7 +62,7 @@
 ##### -[🫥]  imx资料要看吗？
 
 #### ✅大家可以在这补充...
-
+![160-I](image/imx8puls.png)
 
 ---
 ## 最近活动：2.1SIG组会
