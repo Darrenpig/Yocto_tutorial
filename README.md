@@ -44,9 +44,13 @@
 - 2.3   ✅code、❌SSH到Ubuntu环境
 - 2.4   ✅[报名表](https://gitee.com/openeuler/yocto-meta-openeuler/issues/I90DOU#comment-loadder)、Yocto文档到构建
 - 2.5   ❌继续啃文档，✅在网上冲浪
+- ......(春节)
+- 2.21  ✅开始 imx8 的移植， 确认具体的开发板寄送地址和型号 ❌继续啃文档 
 
+##### ✅目标：本周六`2.3`之前完成 Yocto 部署
+##### ✅目标：本周三`2.21`之前完成 imx 8 软件包部署
 
-##### ✅目标：本周六`2.3`之前完成Yocto部署
+![输入图片说明](image/%E5%BC%80%E5%8F%91%E6%9D%BF.jpg)
 
 
 ##### -[🙂]  SSH隧穿VM上的Ubuntu的Shell会不会更方便一些？
@@ -60,6 +64,9 @@
 ##### -[🫥]  怎么打patch？
 ##### -[🫥]  WLS2的环境好用，还是VM里好用？
 ##### -[🫥]  imx资料要看吗？
+##### -[🫥]  3月中旬的南京MeetUp我啥时候去呢？
+
+
 
 #### ✅大家可以在这补充...
 ![160-I](image/imx8puls.png)
@@ -101,6 +108,7 @@ Soc支持， **[米尔科技](https://www.myir-tech.com%2Fproduct%2Findex.asp%3F
 
 ## 维护日志：2.1 @DarrenPig Readme、两份笔记(vim环境变量、2.1组会笔记)
 ## 维护日志：2.4 @DarrenPig Readme 报名信息
+## 维护日志: 2.21@DarrenPig Readme 开发板寄送信息，开工计划
 ✅ ✅ ❌
 ![已有文件](image/image.png)
 ---
@@ -117,3 +125,6 @@ pip3 install sphinx_rtd_theme sphinx_multiversion sphinx_tabs -i https://pypi.tu
 
 ## 24.03这个版本我们贡献扎实点，未来6年都这个版本！
 > 1.30 @puai 大体进展是24.03开始
+
+##  @DarrenPig 记得3月中旬去南邮——MeetUp
+> 2.21 @puai DP要开始做imx8了（imx6 被抢了）
