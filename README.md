@@ -126,9 +126,9 @@ Soc支持， **[米尔科技](https://www.myir-tech.com%2Fproduct%2Findex.asp%3F
 ## 维护日志：2.1 @DarrenPig Readme、两份笔记(vim环境变量、2.1组会笔记)
 ## 维护日志：2.4 @DarrenPig Readme 报名信息
 ## 维护日志: 2.21@DarrenPig Readme 开发板寄送信息，开工计划
+## 维护日志: 2.22@DarrenPig Readme 开发板开箱，更新imx8寄送收单上的文档
 ✅ ✅ ❌
-![已有文件](image/image.png)
-![输入图片说明](image/image.png)
+
 ---
 
 ## P.S.:好玩的文档
