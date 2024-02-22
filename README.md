@@ -144,7 +144,7 @@ pip3 install sphinx_rtd_theme sphinx_multiversion sphinx_tabs -i https://pypi.tu
 ## 24.03这个版本我们贡献扎实点，未来6年都这个版本！
 > 1.30 @puai 大体进展是24.03开始
 
-##  @DarrenPig 记得3月中旬去南邮——MeetUp
+  @DarrenPig 记得3月中旬去南邮——MeetUp（imx8我尽量给点力）
 > 2.21 @puai DP要开始做imx8了（imx6 被抢了）
 
 ##  @wei-app 看一下 NXP 的 单板附带的质量链接 
