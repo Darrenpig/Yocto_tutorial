@@ -34,18 +34,21 @@
 - [2.1组会笔记](https://gitee.com/pai_666/euler-junior/tree/master/Files)
 - [MYS-6ulx-io产品手册](https://www.myir-tech.com/down/manual/NXP/MYS-6ulx-iot_product_manual.pdf)
 - [MYD-JX8MMA7产品介绍](https://www.myir-tech.com/public/files/MYD-JX8MMA7%E4%BA%A7%E5%93%81%E4%BB%8B%E7%BB%8D-V1.0.pdf)
+- [imx8产品 手册、引脚定义、GPIO](http://mier.sz2.hostadm.net/upload/files/product/20230915/16947497869753189.pdf)
+- [NXP的芯片手册  i.MX 8M Mini Applications Processor Datasheet for Industrial Products](https://www.nxp.com.cn/docs/en/data-sheet/IMX8MMIEC.pdf)
 ### 个人进度
 
 #### DarrenPig
-- 1.29 ✅ubuntu 的镜像[ubuntu-22.04.3-desktop-amd64] VMware 安装, [shell环境学习](https://blog.csdn.net/cnds123/article/details/107427030)
-- 1.30 ✅啃 yocto 的文档，本地部署[~/.bashrc-Linux环境变量](https://zhuanlan.zhihu.com/p/359354934)（Day 1）
-- 1.31 ✅bitbake、[vim](https://www.runoob.com/linux/linux-vim.html)、poky（Day 2）
+- 1.29  ✅ubuntu 的镜像[ubuntu-22.04.3-desktop-amd64] VMware 安装, [shell环境学习](https://blog.csdn.net/cnds123/article/details/107427030)
+- 1.30  ✅啃 yocto 的文档，本地部署[~/.bashrc-Linux环境变量](https://zhuanlan.zhihu.com/p/359354934)（Day 1）
+- 1.31  ✅bitbake、[vim](https://www.runoob.com/linux/linux-vim.html)、poky（Day 2）
 - 2.1   ✅[Yocto部署笔记](https://gitee.com/pai_666/euler-junior/blob/master/Files/1.31Ubuntu%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8FShell%E3%80%81vim.pdf)、sig组会（Day 3）
 - 2.3   ✅code、❌SSH到Ubuntu环境
 - 2.4   ✅[报名表](https://gitee.com/openeuler/yocto-meta-openeuler/issues/I90DOU#comment-loadder)、Yocto文档到构建
 - 2.5   ❌继续啃文档，✅在网上冲浪
 - ......(春节)
 - 2.21  ✅开始 imx8 的移植， 确认具体的开发板寄送地址和型号 ❌继续啃文档 
+- 2.22  ✅收到单板，开始啃NXP的[imx 8 mini手册](https://www.nxp.com.cn/docs/en/data-sheet/IMX8MMIEC.pdf)❌ 开箱、找官方的Yocto虚拟机环境
 
 ##### ✅目标：本周六`2.3`之前完成 Yocto 部署
 ##### ✅目标：本周三`2.21`之前完成 imx 8 软件包部署
@@ -111,6 +114,7 @@ Soc支持， **[米尔科技](https://www.myir-tech.com%2Fproduct%2Findex.asp%3F
 ## 维护日志: 2.21@DarrenPig Readme 开发板寄送信息，开工计划
 ✅ ✅ ❌
 ![已有文件](image/image.png)
+![输入图片说明](image/image.png)
 ---
 
 ## P.S.:好玩的文档
