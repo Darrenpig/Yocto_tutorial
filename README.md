@@ -26,7 +26,7 @@
 - 1.30    ✅建立群聊
 - 2.1     ✅sig组会议，创建仓库
 - 2.4     ✅填写报名表
-
+- 2.22    ✅收到imx8开发板, MYD-JX8MX(@DarrenPig )
 ##  资料共享：
 
 - [openEuler Embedded在线文档](https://openeuler.gitee.io/yocto-meta-openeuler/master/introduction/index.html)
@@ -36,6 +36,9 @@
 - [MYD-JX8MMA7产品介绍](https://www.myir-tech.com/public/files/MYD-JX8MMA7%E4%BA%A7%E5%93%81%E4%BB%8B%E7%BB%8D-V1.0.pdf)
 - [imx8产品 手册、引脚定义、GPIO](http://mier.sz2.hostadm.net/upload/files/product/20230915/16947497869753189.pdf)
 - [NXP的芯片手册  i.MX 8M Mini Applications Processor Datasheet for Industrial Products](https://www.nxp.com.cn/docs/en/data-sheet/IMX8MMIEC.pdf)
+- [✅MYD-JX8MX 资源下载](http://http://down.myir-tech.com/MYD-JX8MX/)
+
+
 ### 个人进度
 
 #### DarrenPig
@@ -52,8 +55,7 @@
 
 ##### ✅目标：本周六`2.3`之前完成 Yocto 部署
 ##### ✅目标：本周三`2.21`之前完成 imx 8 软件包部署
-
-![输入图片说明](image/%E5%BC%80%E5%8F%91%E6%9D%BF.jpg)
+![输入图片说明](image/imx%208%20%E6%96%87%E6%A1%A3.png)
 
 
 ##### -[🙂]  SSH隧穿VM上的Ubuntu的Shell会不会更方便一些？
@@ -68,37 +70,49 @@
 ##### -[🫥]  WLS2的环境好用，还是VM里好用？
 ##### -[🫥]  imx资料要看吗？
 ##### -[🫥]  3月中旬的南京MeetUp我啥时候去呢？
+##### -[🫥]  yocto里集成一个第三方软件源码
 
 
 
 #### ✅大家可以在这补充...
 ![160-I](image/imx8puls.png)
+---
+#### imx 8 的文件
+# MYD-JX8MX 资源下载 Resource Download
+
+## 开发资源 Development Resource
+
+| File      | Download Mirror                                              | Chinese                                                      | English                                                      |
+| :-------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
+| MYD-JX8MX | [百度网盘(提取码:ea62)](https://pan.baidu.com/s/1Z5L-CvBNSx-O21GWYYXcKQ) | MYD-JX8MX 开发资源包                                         | MYD-JX8MX Development Package                                |
+|           |                                                              | [MYC-JX8MX 产品数据手册](http://down.myir-tech.com/MYD-JX8MX/01-Document/User_Manual/Chinese/MYC-JX8MX-Product-Manual-zh-V1.0.pdf) | [MYC-JX8MX Product Manual](http://down.myir-tech.com/MYD-JX8MX/01-Document/User_Manual/English/MYC-JX8MX-Product-Manual-en-V1.0.pdf) |
+|           |                                                              | [MYD-JX8MX 产品数据手册](http://down.myir-tech.com/MYD-JX8MX/01-Document/User_Manual/Chinese/MYD-JX8MX-Product-Manual-zh-V1.1.pdf) | [MYD-JX8MX Product Manual](http://down.myir-tech.com/MYD-JX8MX/01-Document/User_Manual/English/MYD-JX8MX-Product-Manual-en-V1.1.pdf) |
+|           |                                                              | [MYD-JX8MX Linux开发手册](http://down.myir-tech.com/MYD-JX8MX/01-Document/User_Manual/Chinese/MYD-JX8MX-Software-Manual-zh-V1.2.pdf) | [MYD-JX8MX Linux Develop Guide](http://down.myir-tech.com/MYD-JX8MX/01-Document/User_Manual/English/MYD-JX8MX-Software-Manual-en-V1.2.pdf) |
+
+## 开发文档 Development Document
+
+| File          | Download Mirror                                              | Chinese                                  | English                                                      |
+| :------------ | :----------------------------------------------------------- | :--------------------------------------- | :----------------------------------------------------------- |
+| MYD-JX8MX文档 | [01-Document.zip](http://down.myir-tech.com/MYD-JX8MX/01-Document.zip) | MYD-JX8MX开发板和MYC-JX8MX核心板开发文档 | The MYD-JX8MX carrier board and MYC-JX8MX SoM development document |
+
+## 应用笔记 Application Note【估计也是我们的任务】
+
+| File | Download Mirror | Chinese | English |
+| :--- | :-------------- | :------ | :------ |
+|      |                 |         |         |
+|      |                 |         |         |
+
+### 系统镜像 System Binary Image 【这是我们的任务】
+
+
+
 
 ---
 ## 最近活动：2.1SIG组会
 有关摘要：
-
- **openEuler/yocto-meta-openEuler
-双周例会：** 
-### 一、近期进展
-- isula —→ systemd解耦
-			—→ host OS / 容器OS
-					（容器相关的生态需求支持）
-- openEuler —→ 以前——包dnf——数据源不同源 → 服务器端的数据
-- 希望未来以image镜像为载体～容器为载体|通过rpm包更多向image发展
-- oe-build——>图形化选择
-- bsp雪球计划
-### 二、isula基本使用
-Embedded —→ OSI容器引擎
-				—→ CLI、CRI管理操作接口
-- oe-build构建标准镜像
-- isula容器引擎
-#Step 1
-- NAT模式	网桥（默认网关）
-- 虚拟机OS（局域网）
 ......
 
-### 三、【重点】 **雪球计划 南向bsp**  支持范围（bsp-都有环境 —→ yocto）
+###  **雪球计划 南向bsp**  支持范围（bsp-都有环境 —→ yocto）
 Soc支持， **[米尔科技](https://www.myir-tech.com%2Fproduct%2Findex.asp%3Fanclassid%3D100)** 赞助：选择硬件板子 —→ issues统计Gitee ID
 - → 可以传递）
 -  **雪球计划 → 预计持续到5月** 
@@ -132,3 +146,6 @@ pip3 install sphinx_rtd_theme sphinx_multiversion sphinx_tabs -i https://pypi.tu
 
 ##  @DarrenPig 记得3月中旬去南邮——MeetUp
 > 2.21 @puai DP要开始做imx8了（imx6 被抢了）
+
+##  @wei-app 看一下 NXP 的 单板附带的质量链接 
+> 2.22 @DarrenPig 你要的贴上去了——资料共享那
