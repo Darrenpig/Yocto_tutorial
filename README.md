@@ -40,11 +40,11 @@
 - [NXP的imx8芯片手册  i.MX 8M Mini Applications Processor Datasheet for Industrial Products](https://www.nxp.com.cn/docs/en/data-sheet/IMX8MMIEC.pdf)
 - [【NXP官网】imx8的芯片介绍，详细内容](https://www.nxp.com/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-8-applications-processors/i-mx-8m-family-armcortex-a53-cortex-m4-audio-voice-video:i.MX8M?lang=en&lang_cd=en&)
 - [【NXP官方】datesheet](https://www.nxp.com/docs/en/data-sheet/IMX8MDQLQIEC.pdf)
-- [【Sig_B站21年录屏】yocto 技术分享第一期：yocto 构建系统之前世今生](https://www.bilibili.com/video/BV1WT4y1R7sK/?
+- [【Sig_B站21年录屏】yocto 技术分享第一期：yocto 构建系统之前世今生](https://www.bilibili.com/video/BV1WT4y1R7sK/?)
 - [【学习资料-B站韦山东NXP】基于100ASK_IMX6ULL开发板的lvgl学习+开发教程](http://download.100ask.net/boards/Nxp/100ask_imx6ull_pro/index.html
 )
 - [【韦东山】韦东山手把手教你嵌入式Linux快速入门到精通 | Linux应用驱动开发基于I.MX6U](https://www.bilibili.com/video/BV1w4411B7a4/?)
-![IMX6_weisahndong](image/IMX6_weisahndong_1708701335964.png)
+
 ![NXP](image/Screenshot%202024-02-23%20233044.png)
 #### - [✅✅✅MYD-JX8MX 资源下载【米尔科技官方】(下面已贴)](http://down.myir-tech.com/MYD-JX8MX/)
 
@@ -64,6 +64,7 @@
 - 2.22  ✅收到单板，开始啃NXP的[imx 8 mini手册](https://www.nxp.com.cn/docs/en/data-sheet/IMX8MMIEC.pdf)❌ 开箱、找官方的Yocto虚拟机环境
 - 2.23  ✅对MYD-JX8MP的快速开始手册（QSG），啃完了，通电、串口通信搞定 ❌
 - 2.27  ✅啃完米尔科技给的板子附带的文档
+- 2.28  ✅开始用Myr给的环境，构建Yocto
 
 ##### ✅目标：本周六`2.3`之前完成 Yocto 部署
 ##### ✅目标：本周三`2.21`之前完成 imx 8 软件包部署
@@ -155,6 +156,7 @@ Soc支持， **[米尔科技](https://www.myir-tech.com%2Fproduct%2Findex.asp%3F
 ## 维护日志: 2.21 @DarrenPig Readme 开发板寄送信息，开工计划
 ## 维护日志: 2.22 @DarrenPig Readme 开发板开箱，更新imx8寄送收单上的文档
 ## 维护日志: 2.23 @DarrenPig Readme 开发板 韦山东imx6_NXP相关内容链接 3份PDF上传File
+## 维护日志: 2.28 @DarrenPig Readme 个人进度、上传了IMX6、IMX8的文件到仓库里
 ✅ ✅ ❌
 
 ---
@@ -181,3 +183,5 @@ pip3 install sphinx_rtd_theme sphinx_multiversion sphinx_tabs -i https://pypi.tu
 ###  今天研究一天，我明天在家也研究，下周一我们让李**给我们说说，看方向偏没有
 > 2.23 @puai 这两天任务
 
+### 今天维护一下Readme，现在openEuler Embedded 都是5.10版本了
+> 2.27 @puai明天我们定个会。
