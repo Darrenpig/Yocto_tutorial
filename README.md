@@ -134,7 +134,111 @@
 
 
 ---
-## 最近活动：2.1SIG组会
+## 最近活动：2.29
+# 2.29SIG例会记录——>年后第一场
+
+# 一、MICA
+
+实时操作系统，多底座。统一接口的共享内存。
+![MICA](image/My_Photor_1709207921475.jpg)
+
+## 使用的方式：
+
+#### MICA的相关的
+![MIca](image/My_Photor_1709207957022.jpg)
+sourse SDK
+![sourse SDK](image/My_Photor_1709207992660.jpg)
+cmake -S
+![cd](image/My_Photor_1709208049542.jpg)
+cd 
+
+从QEMU角度选
+
+SSH QEMU
+
+### ifconfig eth0
+
+ls
+
+gs
+![文档MICA](image/My_Photor_1709208092662.jpg)
+
+文档MICA，使用QEMU部署、RTOS部署等
+
+定义了一个函数
+![定义了一个函数](image/My_Photor_1709208092662.jpg)
+---
+
+# 二、近期环节
+![近期环节](image/My_Photor_1709208192579.jpg)
+isula完善和问题修复：
+（1）支持极简容器镜像，引入openeuler-container-os及资料
+（2）1xc版本回退（修复启动问题），嵌入式保留isula极简运行时1xc，暂不升级runc，否则将会引入go语言，较为厚重2、MICA框架重构：
+混合部署统一命令管理，为后续虚拟化底座做管理准备
+3、重构和BSP完善： （1） 重构meta-hisilicon，兼容openeuler-image镜像 （2）支持hieulerpi（ss928/sd3403）：正式合入master，伙伴正在完善各项配套，3月底将在南京meetup正式发布 （3） 支持hi3093：支持直接在openeuler-image集成海思BSP生成emc部署镜像，同时支持不集成BSP驱动的镜像（可后续通过海思解决方案工程进一步打包）
+![输入图片说明](image/My_Photor_1709208257418.jpg)
+1.   新增登录打印： openEuler Embedded字符终端LOGO打印
+2.   其他优化重构： openeuler_source重构，优化了构建使用ogeneuler_source列表时的构建空间占用openeuler-image配方重构，更加方便的配置镜像 不用手动配置OPENEULER_SRC_URI_REMOVE，当配方对应的仓库在manifest中存在时，会自动移除外部http、https、git源
+3.   当前待修复关键问题： master编译器升级后，已知存在strip失败问题，导致镜像增大，近期即将修复其他问题见记录ISSUE
+
+---
+![发言：雪球计划签到](image/My_Photor_1709208222815.jpg)
+#### 发言：雪球计划签到(只有我们到了)
+
+NXP的看过之后，这些文件是在19年开发myd-jxmx_4.19.35时用到的文件。
+
+---
+
+
+
+
+# 三、要求项目跟进【周末我来看看】
+
+### SDK资料\熟悉、了解、板子的内核迁移
+
+NXP、大部分都在Linux_openEuler里有驱动
+
+## 按设备树驱动移植
+
+### 切换内核、驱动移植、验证、Debug
+
+### Yocto引入BSP层，按树莓派、瑞星微，引入官方的层，代码欧拉化
+
+## 驱动、引进  注意NXP里 的软件层
+
+### 官方的资料的文档......欧拉的文档要相应的跟进
+
+提交欧拉的板块、最小系统的拉起、官方地方特定工程
+
+内核参考、如果内核成熟可以简略
+
+##### 5月15日截至
+
+---
+
+
+### 社区的issue
+![输入图片说明](image/My_Photor_1709208342271.jpg)
+外部工具链 改为Poky localcast 文件
+
+`TCMODE` = （外部构建）
+
+Yocto 的`OPENEULER_PREBULIT_TOOLS_ENABLE` ="  "
+
+原生的gcc 的cross
+
+###### 关掉上述两个之后，就用Poky原件GCC 的方法
+
+Qmake的进度，已经可以在构建SDK
+
+![输入图片说明](image/My_Photor_1709208296574.jpg)
+
+## [fork 主仓参考 提交PR上去]，NXP我们的进度，参考树莓派文档风格
+
+---
+
+
+2.1SIG组会
 有关摘要：
 ......
 
@@ -151,12 +255,13 @@ Soc支持， **[米尔科技](https://www.myir-tech.com%2Fproduct%2Findex.asp%3F
 ---
 #维护信息
 
-## 维护日志：2.1 @DarrenPig Readme、两份笔记(vim环境变量、2.1组会笔记)
-## 维护日志：2.4 @DarrenPig Readme 报名信息
+## 维护日志：2.1  @DarrenPig Readme、两份笔记(vim环境变量、2.1组会笔记)
+## 维护日志：2.4  @DarrenPig Readme 报名信息
 ## 维护日志: 2.21 @DarrenPig Readme 开发板寄送信息，开工计划
 ## 维护日志: 2.22 @DarrenPig Readme 开发板开箱，更新imx8寄送收单上的文档
 ## 维护日志: 2.23 @DarrenPig Readme 开发板 韦山东imx6_NXP相关内容链接 3份PDF上传File
 ## 维护日志: 2.28 @DarrenPig Readme 个人进度、上传了IMX6、IMX8的文件到仓库里
+## 维护日志: 3.3  @DarrenPig Readme 2.29年后例会的一些记录，关于要求和项目跟进之类的
 ✅ ✅ ❌
 
 ---
@@ -185,3 +290,6 @@ pip3 install sphinx_rtd_theme sphinx_multiversion sphinx_tabs -i https://pypi.tu
 
 ### 今天维护一下Readme，现在openEuler Embedded 都是5.10版本了
 > 2.27 @puai明天我们定个会。
+
+###  [fork 主仓参考 提交PR上去]，NXP我们的进度，参考树莓派文档风格
+> 2.29 @DarrenPig 组会要求我们，在主仓跟进一下进度的doc,划分了四步
