@@ -11,6 +11,69 @@
 |i.MX 6ULL|NXP|MYD-Y6ULY2-V2-4E512D-50-I|米尔科技|@DarrenPig,@puai,@wei-app | | | |
 |i.MX 8M Plus|NXP|MYD-JX8MPQ-8E2D-160-I|米尔科技|puai | | | |
 
+### BSP开发步骤参考如下:
+1. 开发板资料学习,了解机器特性,以及使用,测试,烧录方法,
+验收标准:开发板特性、开发烧录、测试文档
+2. 使用开发板资料的SDK进行构建,做烧录测试,了解其目录结构,所使用的工具,代码、固件存放位置等,厂商linux kernel如果能选择,尽量使
+用内核为5.x版本作为参照对象,
+验收标准:开发板特性对应的代码目录结构解析
+3. 内核移植:下载openeuler-kernel源码,从社区节点embedded-openeuler中进行提取版本号,并下载
+例如从master开发,查看https://gitee.com/openeuler/yocto-meta-openeuler/blob/master/.oebuild/manifest.yaml中kernel的tag并下载
+代码如下:
+kernel-5.10:
+remote_url: https://gitee.com/openeuler/kernel.git
+version: 673b97e8053120a4b56fe5b5d5748dcef68a3f50
+a. 下载源码到本地:
+​ git clone https://gitee.com/openeuler/kernel.git openeuler-kernel -b openEuler-22.03-LTS-SP2
+​ cd openeuler-kernel
+​ git checkout 673b97e8053120a4b56fe5b5d5748dcef68a3f50
+​ 下一步就是驱动移植及验证
+​ b. 从设备树查看外设驱动是否存在设备树中对应节点有compitible属性,在driver里面查找对应的驱动,如果则尝试编译其deconfig,如果没有的话就从厂商提供
+的SDK中移植到openeuler-kernel,并完成驱动debug
+验收标准:移植完成的内核推送到对应的PR上,并完善文档,外设支持的内容。以及通过的验证方法。
+4. 内核移植验证完成后制作yocto-meta-openeuler的BSP层
+a. 引入上游的BSP层以及软件层
+i. 初始化环境:
+1) oebuild init <init_dir> -u <your_own_repo_url>
+2) oebuild update
+如果上游有BSP层:
+ii. 复制一份.oebuild/platform/里面的板平台为这次需要的machine,并修改内容为上游层的repo_url以及layer。
+iii. 制作完以上文件即可使用oebuild generate -p <machine>,并按指示进入容器
+iv. 制作openeuler的适配的附加层:
+1) 参考bsp/meta-openeuler-bsp/raspberrypi,在同级目录下新建一个目录vender名字的目录
+2) 在上述目录下增加三个基础核心配方集
+a) recipes-bsp:存放基础的配方以及固件如uboot/grub/bootfiles等
+b) recipes-core:主要存放images/packagegroups/systemd等系统核心部分
+c) recipes-kernel:主要存放linux等欧拉内核相关配方
+3) 在bsp/meta-openeuler-bsp/conf/layer.conf中参考raspberrypi与rockchip内容,增加自己的附加层
+v. 在bsp下制作BSP层,也可以直接复制meta-hisilicon,并修改成自己要样子。也可以参考yocto文档从bitbake构建bsp层
+https://docs.yoctoproject.org/bsp-guide/bsp.html#creating-a-new-bsp-layer-using-the-bitbake-layers-script
+vi. 参考上游通soc的机器配置,加入附加的机器配置
+4) 建立该机器配方:
+a) 如果上游有BSP层:参考上游同soc架构的<machine>.conf,在include内新建一个名为openeuler-
+<machine>.conf并做通用的欧拉相关的定制修改。制作自己的<machine>.conf,引用通用的openeuler-
+<machine>.conf,并定义自己所需要的配置
+b) 如果上游没有BSP层:参考其他机器的machine.conf,制作一份<machine>.conf
+5) <machine>.conf一般有
+a) KBUILD_DEFCONFIG内核的defconfig,也可以不定义,定义了就会用内核仓库内的xxxx_defconfig
+b) SERIAL_CONSOLES定义串行口,波特率等
+c) KERNEL_DTB_NAME定义设备树名
+vii. 修改内核相关的配方,参考bsp/meta-openeuler-bsp/rockchip/recipes-kernel/linux/ 做实现
+viii. kernel仓库在.oebuild/manifest里加上相应仓库地址(测试时可用自己的私仓,在推送PR的时候尽量使用公仓)
+ix. 验证并DEBUG内核linux-openeuler,烧录并验证
+6) bitbake linux-openeuler
+x. 制作文件系统
+参考bsp/meta-openeuler-bsp/rockchip/recipes-core/images,在自己层的recipes-core/images下创建<machine>.inc,定义
+分区 yocto 的第 1 页
+7) 参考bsp/meta-openeuler-bsp/rockchip/recipes-core/images,在自己层的recipes-core/images下创建<machine>.inc,定义
+IMAGE_FSTYPES等(如果machine.conf里面有了也可以不用定义),如果需要把输出挪到output下也可以参考实现
+8) 验证并DEBUG文件系统bitbake openeuler-image,烧录并验证
+xi. 过程中遇到问题可用btibake -e <recipes>查看执行环境,对照tmp/work/<arch>/<recipes>/<version>/temp内的log对应
+相关BUG进行过程验证。
+b. 推动相关固件/优化代码欧拉建仓
+i. 验证文件系统以及驱动固件及其功能后,可推动欧拉建立相关仓库进行存储
+验收标准:移植完成的ycoto代码推送到对应的PR上,并完善文档,功能支持的内容。以及通过的验证方法。
+
 
 ![NXP板子](image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-02-01%20152323.png)
 ## 项目要求
@@ -175,11 +238,11 @@ isula完善和问题修复：
 （1）支持极简容器镜像，引入openeuler-container-os及资料
 （2）1xc版本回退（修复启动问题），嵌入式保留isula极简运行时1xc，暂不升级runc，否则将会引入go语言，较为厚重2、MICA框架重构：
 混合部署统一命令管理，为后续虚拟化底座做管理准备
-3、重构和BSP完善： （1） 重构meta-hisilicon，兼容openeuler-image镜像 （2）支持hieulerpi（ss928/sd3403）：正式合入master，伙伴正在完善各项配套，3月底将在南京meetup正式发布 （3） 支持hi3093：支持直接在openeuler-image集成海思BSP生成emc部署镜像，同时支持不集成BSP驱动的镜像（可后续通过海思解决方案工程进一步打包）
+3、重构和BSP完善：&#x2028;（1） 重构meta-hisilicon，兼容openeuler-image镜像&#x2028;（2）支持hieulerpi（ss928/sd3403）：正式合入master，伙伴正在完善各项配套，3月底将在南京meetup正式发布&#x2028;（3） 支持hi3093：支持直接在openeuler-image集成海思BSP生成emc部署镜像，同时支持不集成BSP驱动的镜像（可后续通过海思解决方案工程进一步打包）
 ![输入图片说明](image/My_Photor_1709208257418.jpg)
-1.   新增登录打印： openEuler Embedded字符终端LOGO打印
-2.   其他优化重构： openeuler_source重构，优化了构建使用ogeneuler_source列表时的构建空间占用openeuler-image配方重构，更加方便的配置镜像 不用手动配置OPENEULER_SRC_URI_REMOVE，当配方对应的仓库在manifest中存在时，会自动移除外部http、https、git源
-3.   当前待修复关键问题： master编译器升级后，已知存在strip失败问题，导致镜像增大，近期即将修复其他问题见记录ISSUE
+1.   新增登录打印：&#x2028;openEuler Embedded字符终端LOGO打印
+2.   其他优化重构：&#x2028;openeuler_source重构，优化了构建使用ogeneuler_source列表时的构建空间占用openeuler-image配方重构，更加方便的配置镜像&#x2028;不用手动配置OPENEULER_SRC_URI_REMOVE，当配方对应的仓库在manifest中存在时，会自动移除外部http、https、git源
+3.   当前待修复关键问题：&#x2028;master编译器升级后，已知存在strip失败问题，导致镜像增大，近期即将修复其他问题见记录ISSUE
 
 ---
 ![发言：雪球计划签到](image/My_Photor_1709208222815.jpg)
