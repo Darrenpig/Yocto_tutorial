@@ -14,19 +14,25 @@
 ### BSP开发步骤参考如下:
 1. 开发板资料学习,了解机器特性,以及使用,测试,烧录方法,
 验收标准:开发板特性、开发烧录、测试文档
-2. 使用开发板资料的SDK进行构建,做烧录测试,了解其目录结构,所使用的工具,代码、固件存放位置等,厂商linux kernel如果能选择,尽量使
-用内核为5.x版本作为参照对象,
+
+2. 使用开发板资料的SDK进行构建,做烧录测试,了解其目录结构,所使用的工具,代码、固件存放位置等,厂商linux kernel如果能选择,尽量使用内核为5.x版本作为参照对象
 验收标准:开发板特性对应的代码目录结构解析
+
 3. 内核移植:下载openeuler-kernel源码,从社区节点embedded-openeuler中进行提取版本号,并下载
-例如从master开发,查看https://gitee.com/openeuler/yocto-meta-openeuler/blob/master/.oebuild/manifest.yaml中kernel的tag并下载
+例如从master开发,查看https://gitee.com/openeuler/yocto-meta-openeuler/blob/master/.oebuild/manifest.yaml 中 kernel 的tag并下载
 代码如下:
 kernel-5.10:
+
 remote_url: https://gitee.com/openeuler/kernel.git
+
 version: 673b97e8053120a4b56fe5b5d5748dcef68a3f50
+
 a. 下载源码到本地:
 ​ git clone https://gitee.com/openeuler/kernel.git openeuler-kernel -b openEuler-22.03-LTS-SP2
 ​ cd openeuler-kernel
+
 ​ git checkout 673b97e8053120a4b56fe5b5d5748dcef68a3f50
+
 ​ 下一步就是驱动移植及验证
 ​ b. 从设备树查看外设驱动是否存在设备树中对应节点有compitible属性,在driver里面查找对应的驱动,如果则尝试编译其deconfig,如果没有的话就从厂商提供
 的SDK中移植到openeuler-kernel,并完成驱动debug
@@ -38,6 +44,7 @@ i. 初始化环境:
 2) oebuild update
 如果上游有BSP层:
 ii. 复制一份.oebuild/platform/里面的板平台为这次需要的machine,并修改内容为上游层的repo_url以及layer。
+
 iii. 制作完以上文件即可使用oebuild generate -p <machine>,并按指示进入容器
 iv. 制作openeuler的适配的附加层:
 1) 参考bsp/meta-openeuler-bsp/raspberrypi,在同级目录下新建一个目录vender名字的目录
@@ -47,7 +54,9 @@ b) recipes-core:主要存放images/packagegroups/systemd等系统核心部分
 c) recipes-kernel:主要存放linux等欧拉内核相关配方
 3) 在bsp/meta-openeuler-bsp/conf/layer.conf中参考raspberrypi与rockchip内容,增加自己的附加层
 v. 在bsp下制作BSP层,也可以直接复制meta-hisilicon,并修改成自己要样子。也可以参考yocto文档从bitbake构建bsp层
+
 https://docs.yoctoproject.org/bsp-guide/bsp.html#creating-a-new-bsp-layer-using-the-bitbake-layers-script
+
 vi. 参考上游通soc的机器配置,加入附加的机器配置
 4) 建立该机器配方:
 a) 如果上游有BSP层:参考上游同soc架构的<machine>.conf,在include内新建一个名为openeuler-
