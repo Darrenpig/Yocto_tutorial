@@ -117,7 +117,7 @@ https://docs.yoctoproject.org/bsp-guide/bsp.html#creating-a-new-bsp-layer-using-
 - 3.10  ✅下载镜像包，团队组会
 - 3.11  ✅本周任务：4.19自己本地编译，完成镜像的烧录
 - 3.14  ✅下载镜像包、板子初次上电，SD卡烧录
-
+- 3.24  ✅Try to deal with 板子附带的文档:镜像的烧录
 
 
 ##### ✅目标：本周六`2.3`之前完成 Yocto 部署
