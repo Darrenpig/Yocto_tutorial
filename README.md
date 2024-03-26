@@ -76,6 +76,7 @@ https://docs.yoctoproject.org/bsp-guide/bsp.html#creating-a-new-bsp-layer-using-
 - 2.4     ✅填写报名表
 - 2.22    ✅收到imx8开发板, MYD-JX8MX(@DarrenPig )
 - 2.23    ✅都在看文档
+- 3.26    ❌29号前看一下BSP源码
 
 ##  资料共享：
 
@@ -116,8 +117,9 @@ https://docs.yoctoproject.org/bsp-guide/bsp.html#creating-a-new-bsp-layer-using-
 - 3.7   ✅Github双相库，尝试上传文件包，但502网关问题
 - 3.10  ✅下载镜像包，团队组会
 - 3.11  ✅本周任务：4.19自己本地编译，完成镜像的烧录
-- 3.14  ✅下载镜像包、板子初次上电，SD卡烧录
-- 3.24  ✅Try to deal with 板子附带的文档:镜像的烧录
+- 3.14  ✅下载镜像包、板子初次上电，SD卡烧录❌直接上电烧录失败
+- 3.24  ✅Try to deal with 板子附带的文档:镜像的烧录❌本地编译运行存储不足，更换本地固态硬盘为4T（米尔建议使用800G以上环境），之前的虚拟机崩溃了，快照可恢复
+- 3.26  ✅本地重新在win11专业版桌面的WSL中Ubuntu20.04安装poky、imx8环境，加载环境配置，争取两天内编译好镜像❌虚拟机崩溃，转向容器方案
 
 
 ##### ✅目标：本周六`2.3`之前完成 Yocto 部署
@@ -321,6 +323,8 @@ Soc支持， **[米尔科技](https://www.myir-tech.com%2Fproduct%2Findex.asp%3F
 ## 维护日志: 2.28 @DarrenPig Readme 个人进度、上传了IMX6、IMX8的文件到仓库里
 ## 维护日志: 3.3  @DarrenPig Readme 2.29年后例会的一些记录，关于要求和项目跟进之类的
 ## 维护日志: 3.14 @DarrenPig Readme 周日组会的简要记录，个人进度。
+## 维护日志: 3.24 @DarrenPig Readme 成都 G11&Doc Sig 的 MeetUp, 更新一些相关的内容
+## 维护日志: 3.26 @DarrenPig Readme 去南京 MeetUp 前看 BSP 的小组短期计划，更新个人进度
 ✅ ✅ ❌
 
 ---
@@ -341,7 +345,7 @@ pip3 install sphinx_rtd_theme sphinx_multiversion sphinx_tabs -i https://pypi.tu
   @DarrenPig 记得3月中旬报名去南邮——MeetUp（imx8我尽量给点力）
 > 2.21 @puai  @DarrenPig要开始做imx8了（imx6 被抢了）
 
-###  @wei-app 看一下 NXP 的 单板附带的质量链接 
+####  @wei-app 看一下 NXP 的 单板附带的质量链接 
 > 2.22 @DarrenPig 你要的贴上去了——资料共享那
 
 ####  今天研究一天，我明天在家也研究，下周一我们让李**给我们说说，看方向偏没有
@@ -353,5 +357,8 @@ pip3 install sphinx_rtd_theme sphinx_multiversion sphinx_tabs -i https://pypi.tu
 ####  [fork 主仓参考 提交PR上去]，NXP我们的进度，参考树莓派文档风格
 > 2.29 @DarrenPig 组会要求我们，在主仓跟进一下进度的doc,划分了四步
 
-## 我们先跑一遍4.19。一周时间，4.19先上去、文件、uboot、内核、环境变量...
+### 我们先跑一遍4.19。一周时间，4.19先上去、文件、uboot、内核、环境变量...
 > 3.14 @puai 20日前，5.10编起来
+
+##  @DarrenPig  @wei-app 本周抽点时间把nxp的bsp一起看一下
+> 3.26 @puai 昨天领导让我去南京，我说我要学习
