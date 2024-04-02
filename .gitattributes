@@ -1,1 +1,2 @@
 file filter=lfs diff=lfs merge=lfs -text
+MYD_JX8MP_Manual.pdf filter=lfs diff=lfs merge=lfs -text
