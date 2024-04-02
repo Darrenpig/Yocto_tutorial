@@ -121,7 +121,12 @@ https://docs.yoctoproject.org/bsp-guide/bsp.html#creating-a-new-bsp-layer-using-
 - 3.24  ✅Try to deal with 板子附带的文档:镜像的烧录❌本地编译运行存储不足，更换本地固态硬盘为4T（米尔建议使用800G以上环境），之前的虚拟机崩溃了，快照可恢复
 - 3.26  ✅本地重新在win11专业版桌面的WSL中Ubuntu20.04安装poky、imx8环境，加载环境配置，争取两天内编译好镜像❌虚拟机崩溃，转向容器方案
 - 3.29  ✅Nanjing MeetUp 关于星闪、欧拉派
+- 4.1   ✅本地wsl环境搭建，22.04无法编译米尔的源文件
+- 4.2   ✅更换Ubuntu18，编译源文件
+###### - 4.3   ✅上传文件包——User_Manual、NXP_Manual（使用[Github同步仓](https://github.com/Darrenpig/Yocto_tutorial)，[git lfs](https://github.com/git-lfs/git-lfs?tab=readme-ov-file) track上传大于50MBPDF文件）
 
+
+https://github.com/git-lfs/git-lfs?tab=readme-ov-file
 ##### ✅目标：本周六`2.3`之前完成 Yocto 部署
 ##### ✅目标：本周三`2.21`之前完成 imx 8 软件包部署
 ![输入图片说明](image/imx%208%20%E6%96%87%E6%A1%A3.png)
@@ -148,6 +153,7 @@ https://docs.yoctoproject.org/bsp-guide/bsp.html#creating-a-new-bsp-layer-using-
 ##### -[🫥]  Gitub CLI好像传不了1.6G的imx-linux
 ##### -[🫥]  本地安装编译环境，测试SD卡上电
 ##### -[🫥]  硬盘满了，换了个4T的，正在重新安装虚拟机环境
+### -[🙂]超过50MB的文件无法上传Gitee社区版，使用Github的lfs打包上传文件
 
 
 ###  imx8（MYD-JX8MP）资料己经贴下面了【百度网盘(80G左右)】，部分文档已经上传本仓库和群
@@ -325,6 +331,7 @@ Soc支持， **[米尔科技](https://www.myir-tech.com%2Fproduct%2Findex.asp%3F
 ## 维护日志: 3.14 @DarrenPig Readme 周日组会的简要记录，个人进度。
 ## 维护日志: 3.24 @DarrenPig Readme 成都 G11&Doc Sig 的 MeetUp, 更新一些相关的内容
 ## 维护日志: 3.26 @DarrenPig Readme 去南京 MeetUp 前看 BSP 的小组短期计划，更新个人进度
+## 维护日志: 4.3  @DarrenPig Readme 上传User_Manual、NXP_Manual，本地wsl在18上编译
 ✅ ✅ ❌
 
 ---
@@ -362,3 +369,6 @@ pip3 install sphinx_rtd_theme sphinx_multiversion sphinx_tabs -i https://pypi.tu
 
 ##  @DarrenPig  @wei-app 本周抽点时间把nxp的bsp一起看一下
 > 3.26 @puai 昨天领导让我去南京，我说我要学习
+
+##  @DarrenPig 空了一起看看 nxp的那个问题哇
+> 4.3 @wei-app 单板的几个手册能不能上到gitee上
