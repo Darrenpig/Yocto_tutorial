@@ -194,42 +194,28 @@ https://github.com/git-lfs/git-lfs?tab=readme-ov-file
 
 
 ---
-## 最近活动：2.29
-# 2.29SIG例会记录——>年后第一场
+## 最近活动：
 
-# 一、MICA
+![输入图片说明](image/sdcardmake.png)
+
+
+
+
+
+### 2.29SIG例会记录——>年后第一场
+
+##### 一、MICA
 
 实时操作系统，多底座。统一接口的共享内存。
 ![MICA](image/My_Photor_1709207921475.jpg)
 
-## 使用的方式：
+###### 使用的方式：
 
-#### MICA的相关的
-![MIca](image/My_Photor_1709207957022.jpg)
-sourse SDK
-![sourse SDK](image/My_Photor_1709207992660.jpg)
-cmake -S
-![cd](image/My_Photor_1709208049542.jpg)
-cd 
+####### 文档MICA，使用QEMU部署、RTOS部署等
 
-从QEMU角度选
 
-SSH QEMU
 
-### ifconfig eth0
-
-ls
-
-gs
-![文档MICA](image/My_Photor_1709208092662.jpg)
-
-文档MICA，使用QEMU部署、RTOS部署等
-
-定义了一个函数
-![定义了一个函数](image/My_Photor_1709208092662.jpg)
----
-
-# 二、近期环节
+## 二、近期环节
 ![近期环节](image/My_Photor_1709208192579.jpg)
 
 
@@ -276,23 +262,8 @@ NXP、大部分都在Linux_openEuler里有驱动
 > 
 > 内核参考、如果内核成熟可以简略
 
-##### 5月15日截至
+# 5月15日截至
 
----
-
-
-### 社区的issue
-![输入图片说明](image/My_Photor_1709208342271.jpg)
-
-
-> 外部工具链 改为Poky localcast 文件
-> 
-> `TCMODE` = （外部构建）
-> 
-> Yocto 的`OPENEULER_PREBULIT_TOOLS_ENABLE` ="  "
-> 
-> 原生的gcc 的cross
-> 
 ###### 关掉上述两个之后，就用Poky原件GCC 的方法
 
 Qmake的进度，已经可以在构建SDK
@@ -372,3 +343,6 @@ pip3 install sphinx_rtd_theme sphinx_multiversion sphinx_tabs -i https://pypi.tu
 
 ##  @DarrenPig 空了一起看看 nxp的那个问题哇
 > 4.3 @wei-app 单板的几个手册能不能上到gitee上
+
+##  @DarrenPig 例会、个人进展我跟新上来了
+> 4.10 @puai 明天约个会。看看当前的进展
