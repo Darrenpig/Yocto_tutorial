@@ -77,7 +77,7 @@ https://docs.yoctoproject.org/bsp-guide/bsp.html#creating-a-new-bsp-layer-using-
 - 2.22    ✅收到imx8开发板, MYD-JX8MX(@DarrenPig )
 - 2.23    ✅都在看文档
 - 3.26    ❌29号前看一下BSP源码
-
+- 4.10    ✅加紧进度，开会交流
 ##  资料共享：
 
 - [openEuler Embedded在线文档【社区文档】](https://openeuler.gitee.io/yocto-meta-openeuler/master/introduction/index.html)
