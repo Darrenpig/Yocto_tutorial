@@ -129,7 +129,7 @@ https://docs.yoctoproject.org/bsp-guide/bsp.html#creating-a-new-bsp-layer-using-
 https://github.com/git-lfs/git-lfs?tab=readme-ov-file
 ##### ✅目标：本周六`2.3`之前完成 Yocto 部署
 ##### ✅目标：本周三`2.21`之前完成 imx 8 软件包部署
-![输入图片说明](image/imx%208%20%E6%96%87%E6%A1%A3.png)
+##### ✅目标：本周五`4.11`之前上传上电加载的内容
 
 
  -[🙂]  SSH隧穿VM上的Ubuntu的Shell会不会更方便一些？
