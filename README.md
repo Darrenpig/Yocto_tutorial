@@ -186,6 +186,7 @@ Yocto-downlaod-5.10(百度网盘) Yocto-downlaod-5.10(百度网盘提取码：X8
 版本号	状态	发布时间	镜像
 v2.0.0	GA	2022-11-07	MYD-JX8MPQ-L5.10.9-V2.0.0.iso
 
+![image](https://github.com/Darrenpig/Yocto_tutorial/assets/121377489/7b1c2318-b87a-4caa-a805-02b768f8932c)
 
 
 # MYD-JX8MX 资源下载 Resource Download
