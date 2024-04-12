@@ -162,7 +162,32 @@ https://github.com/git-lfs/git-lfs?tab=readme-ov-file
 #### ✅大家可以在这补充...
 ![160-I](image/imx8puls.png)
 ---
-#### imx 8 的文件
+#### imx 8 的文件：【下载这个：@Weiwei】https://down.myir-tech.com/MYD-JX8MP/
+
+MYD-JX8MPQ 资源包
+适用于米尔电子的MYD-JX8MPQ系列核心板和开发板。其中包括米尔定制的底层BSP源码、预编译的镜像文件、Linux软件评估和开发相关的文档、以及开发调试过程中使用的一些工具等。
+
+原产品DDR大小是3G，目前新增2G DDR/4G DDR配置，
+最新BSP V2.0.0-L5.10.9
+文档下载
+MYD-JX8MPQ文档 MYD-JX8MPQ软硬件手册，包含电路图，PIN脚定义，数据手册，开发手册,3D结构等
+镜像下载
+02_Image_8E2D 2G DDR 全面型系统镜像，包含丰富的linux命令集，QT5.15.0运行库，python3组件
+02_Image_8E3D 3G DDR 全面型系统镜像，包含丰富的linux命令集，QT5.15.0运行库，python3组件
+02_Image_8E4D 4G DDR 全面型系统镜像，包含丰富的linux命令集，QT5.15.0运行库，python3组件
+UUU工具下载
+03_Tools_UUU UUU镜像
+源码下载
+04_Sources 包含全部BSP源代码，yocto,uboot,kernel等
+Yocto-downlaod-5.10下载
+Yocto-downlaod-5.10(百度网盘) Yocto-downlaod-5.10(百度网盘提取码：X8MP)
+光盘镜像下载:  MYD-JX8MPQ-L5.10.9-V2.0.0.iso
+百度网盘下载:  https://pan.baidu.com/s/1aLNlzcxvyjVJQ_rMudeJdA (百度网盘提取码：X8MP)
+版本号	状态	发布时间	镜像
+v2.0.0	GA	2022-11-07	MYD-JX8MPQ-L5.10.9-V2.0.0.iso
+
+
+
 # MYD-JX8MX 资源下载 Resource Download
 
 ## 开发资源 Development Resource
