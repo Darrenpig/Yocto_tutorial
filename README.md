@@ -329,6 +329,7 @@ Soc支持， **[米尔科技](https://www.myir-tech.com%2Fproduct%2Findex.asp%3F
 ## 维护日志: 3.24 @DarrenPig Readme 成都 G11&Doc Sig 的 MeetUp, 更新一些相关的内容
 ## 维护日志: 3.26 @DarrenPig Readme 去南京 MeetUp 前看 BSP 的小组短期计划，更新个人进度
 ## 维护日志: 4.3  @DarrenPig Readme 上传User_Manual、NXP_Manual，本地wsl在18上编译
+## 维护日志: 4.16 @DarrenPig Readme 更改MY的资料包，https://github.com/Darrenpig/myir-imx-linux 本地fork了一份到Gitee
 ✅ ✅ ❌
 
 ---
@@ -361,14 +362,20 @@ pip3 install sphinx_rtd_theme sphinx_multiversion sphinx_tabs -i https://pypi.tu
 ####  [fork 主仓参考 提交PR上去]，NXP我们的进度，参考树莓派文档风格
 > 2.29 @DarrenPig 组会要求我们，在主仓跟进一下进度的doc,划分了四步
 
-### 我们先跑一遍4.19。一周时间，4.19先上去、文件、uboot、内核、环境变量...
+#### 我们先跑一遍4.19。一周时间，4.19先上去、文件、uboot、内核、环境变量...
 > 3.14 @puai 20日前，5.10编起来
 
-##  @DarrenPig  @wei-app 本周抽点时间把nxp的bsp一起看一下
+###  @DarrenPig  @wei-app 本周抽点时间把nxp的bsp一起看一下
 > 3.26 @puai 昨天领导让我去南京，我说我要学习
 
-##  @DarrenPig 空了一起看看 nxp的那个问题哇
+###  @DarrenPig 空了一起看看 nxp的那个问题哇
 > 4.3 @wei-app 单板的几个手册能不能上到gitee上
 
 ##  @DarrenPig 例会、个人进展我跟新上来了
 > 4.10 @puai 明天约个会。看看当前的进展
+
+##  @DarrenPig 例会、个人进展我跟新上来了
+> 4.10 @puai 明天约个会。看看当前的进展
+
+##  @DarrenPig 米尔的子资料已经更新了，新的我今晚编译一下
+> 4.15 @wei-app 你编译出来了吗，你编译出来了吗？
