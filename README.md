@@ -213,15 +213,11 @@ https://github.com/git-lfs/git-lfs?tab=readme-ov-file
 ### 系统镜像 System Binary Image 【这是我们的任务】
 
 构建流程图
-![构建说明](image/640%20(1).jfif)
 
+<img src="image/640%20(1).jfif" width="180" height="105"><img src="image/sdcardmake.png" width="180" height="105"><img src="image/My_Photor_1709207921475.jpg" width="180" height="105"/>
 
 ---
 ## 最近活动：
-
-![输入图片说明](image/sdcardmake.png)
-
-
 
 
 
@@ -230,7 +226,7 @@ https://github.com/git-lfs/git-lfs?tab=readme-ov-file
 ##### 一、MICA
 
 实时操作系统，多底座。统一接口的共享内存。
-![MICA](image/My_Photor_1709207921475.jpg)
+
 
 ###### 使用的方式：
 
