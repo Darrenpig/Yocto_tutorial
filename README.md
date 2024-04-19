@@ -94,9 +94,8 @@ https://docs.yoctoproject.org/bsp-guide/bsp.html#creating-a-new-bsp-layer-using-
 )
 - [【韦东山】韦东山手把手教你嵌入式Linux快速入门到精通 | Linux应用驱动开发基于I.MX6U](https://www.bilibili.com/video/BV1w4411B7a4/?)
 
-![NXP](image/Screenshot%202024-02-23%20233044.png)
-#### - [✅✅✅MYD-JX8MX 资源下载【米尔科技官方】(下面已贴)](http://down.myir-tech.com/MYD-JX8MX/)
-
+- [❌MYD-JX8MX 资源下载【米尔科技官方】(下面已贴)](http://down.myir-tech.com/MYD-JX8MX/)
+#### [MYD-JX8MPQ-L5.10.9-V2.0.0.【米尔科技官方】](https://down.myir-tech.com/MYD-JX8MP/)
 
 ### 个人进度
 
@@ -160,31 +159,29 @@ https://github.com/git-lfs/git-lfs?tab=readme-ov-file
 
 
 #### ✅大家可以在这补充...
-![160-I](image/imx8puls.png)
+
 ---
 #### imx 8 的文件：【下载这个：@Weiwei】https://down.myir-tech.com/MYD-JX8MP/
 
-MYD-JX8MPQ 资源包
-适用于米尔电子的MYD-JX8MPQ系列核心板和开发板。其中包括米尔定制的底层BSP源码、预编译的镜像文件、Linux软件评估和开发相关的文档、以及开发调试过程中使用的一些工具等。
+### MYD-JX8MPQ 资源包
+> 适用于米尔电子的MYD-JX8MPQ系列核心板和开发板。其中包括米尔定制的底层BSP源码、预编译的镜像文件、Linux软件评估和开发相关的文档、以及开发调试过程中使用的一些工具等。
+- 原产品DDR大小是3G，目前新增2G DDR/4G DDR配置，最新BSP V2.0.0-L5.10.9
+#### 文档下载
+##### MYD-JX8MPQ文档 MYD-JX8MPQ软硬件手册，包含电路图，PIN脚定义，数据手册，开发手册,3D结构等
+#### 镜像下载
+###### 02_Image_8E2D 2G DDR 全面型系统镜像，包含丰富的linux命令集，QT5.15.0运行库，python3组件
+###### 02_Image_8E3D 3G DDR 全面型系统镜像，包含丰富的linux命令集，QT5.15.0运行库，python3组件
+###### 02_Image_8E4D 4G DDR 全面型系统镜像，包含丰富的linux命令集，QT5.15.0运行库，python3组件
+#### UUU工具下载
+###### 03_Tools_UUU UUU镜像
+#### 源码下载
+ 04_Sources 包含全部BSP源代码，yocto,uboot,kernel等
+#### Yocto-downlaod-5.10下载
+#### Yocto-downlaod-5.10(百度网盘) Yocto-downlaod-5.10(百度网盘提取码：X8MP)
+## 光盘镜像下载:  MYD-JX8MPQ-L5.10.9-V2.0.0.iso
+#### 百度网盘下载:  https://pan.baidu.com/s/1aLNlzcxvyjVJQ_rMudeJdA (百度网盘提取码：X8MP)
 
-原产品DDR大小是3G，目前新增2G DDR/4G DDR配置，
-最新BSP V2.0.0-L5.10.9
-文档下载
-MYD-JX8MPQ文档 MYD-JX8MPQ软硬件手册，包含电路图，PIN脚定义，数据手册，开发手册,3D结构等
-镜像下载
-02_Image_8E2D 2G DDR 全面型系统镜像，包含丰富的linux命令集，QT5.15.0运行库，python3组件
-02_Image_8E3D 3G DDR 全面型系统镜像，包含丰富的linux命令集，QT5.15.0运行库，python3组件
-02_Image_8E4D 4G DDR 全面型系统镜像，包含丰富的linux命令集，QT5.15.0运行库，python3组件
-UUU工具下载
-03_Tools_UUU UUU镜像
-源码下载
-04_Sources 包含全部BSP源代码，yocto,uboot,kernel等
-Yocto-downlaod-5.10下载
-Yocto-downlaod-5.10(百度网盘) Yocto-downlaod-5.10(百度网盘提取码：X8MP)
-光盘镜像下载:  MYD-JX8MPQ-L5.10.9-V2.0.0.iso
-百度网盘下载:  https://pan.baidu.com/s/1aLNlzcxvyjVJQ_rMudeJdA (百度网盘提取码：X8MP)
-版本号	状态	发布时间	镜像
-v2.0.0	GA	2022-11-07	MYD-JX8MPQ-L5.10.9-V2.0.0.iso
+>  版本号	状态	发布时间	镜像 v2.0.0	GA	2022-11-07	MYD-JX8MPQ-L5.10.9-V2.0.0.iso
 
 ![image](https://github.com/Darrenpig/Yocto_tutorial/assets/121377489/7b1c2318-b87a-4caa-a805-02b768f8932c)
 
