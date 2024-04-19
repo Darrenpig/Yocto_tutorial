@@ -242,21 +242,16 @@ v2.0.0	GA	2022-11-07	MYD-JX8MPQ-L5.10.9-V2.0.0.iso
 
 
 ## 二、近期环节
-![近期环节](image/My_Photor_1709208192579.jpg)
+### 4.12小组会议，发现资料包提供错误，并且已有5.10相关的版本适配。
 
 
-> isula完善和问题修复：
-> （1）支持极简容器镜像，引入openeuler-container-os及资料
-> （2）1xc版本回退（修复启动问题），嵌入式保留isula极简运行时1xc，暂不升级runc，否则将会引入go语言，较为厚重2、MICA框架重构：
-> 混合部署统一命令管理，为后续虚拟化底座做管理准备
-> 3、重构和BSP完善：&#x2028;（1） 重构meta-hisilicon，兼容openeuler-image镜像&#x2028;（2）支持hieulerpi（ss928/sd3403）：正式合入master，伙伴正在完善各项配套，3月底将在南京meetup正式发布&#x2028;（3） 支持hi3093：支持直接在openeuler-image集成海思BSP生成emc部署镜像，同时支持不集成BSP驱动的镜像（可后续通过海思解决方案工程进一步打包）
-> ![输入图片说明](image/My_Photor_1709208257418.jpg)
-> 1.   新增登录打印：&#x2028;openEuler Embedded字符终端LOGO打印
-> 2.   其他优化重构：&#x2028;openeuler_source重构，优化了构建使用ogeneuler_source列表时的构建空间占用openeuler-image配方重构，更加方便的配置镜像&#x2028;不用手动配置OPENEULER_SRC_URI_REMOVE，当配方对应的仓库在manifest中存在时，会自动移除外部http、https、git源
-> 3.   当前待修复关键问题：&#x2028;master编译器升级后，已知存在strip失败问题，导致镜像增大，近期即将修复其他问题见记录ISSUE
+### 2.23-25 成都 G11 MeetUp 
+国际化、信息嗅探
+### 4.2 南京南邮Embedded-Sig MeetUp  
+欧拉派、星闪
 
 ---
-![发言：雪球计划签到](image/My_Photor_1709208222815.jpg)
+
 #### 发言：雪球计划签到(只有我们到了)
 
 NXP的看过之后，这些文件是在19年开发myd-jxmx_4.19.35时用到的文件。
@@ -289,12 +284,6 @@ NXP、大部分都在Linux_openEuler里有驱动
 > 内核参考、如果内核成熟可以简略
 
 # 5月15日截至
-
-###### 关掉上述两个之后，就用Poky原件GCC 的方法
-
-Qmake的进度，已经可以在构建SDK
-
-![输入图片说明](image/My_Photor_1709208296574.jpg)
 
 ## [fork 主仓参考 提交PR上去]，NXP我们的进度，参考树莓派文档风格
 
@@ -381,3 +370,4 @@ pip3 install sphinx_rtd_theme sphinx_multiversion sphinx_tabs -i https://pypi.tu
 > 4.15 @wei-app 你编译出来了吗，你编译出来了吗？
 
 ## @DarrenPig 周六晚上要开会
+> 4.19 我今晚编译一下
