@@ -5,11 +5,11 @@
 
 > 旨在对南向BSP的覆盖活动，目的是扩大openEuler对南向bsp的支持范围， “雪球计划”，寓意openEuler将一步步强大，最终成为国内乃至国际顶流嵌入式操作系统
 
- ### **本小组研究：NXP** 
+ ### **本小组研究：Nearlink** 
 | SOC型号 | soc厂商 | bsp型号 | 赞助商 | gitee id | 进度 | 完成时间 | 备注 |
 |-------|-------|-------|-----|----------|----|------|----|
-|i.MX 6ULL|NXP|MYD-Y6ULY2-V2-4E512D-50-I|米尔科技|@DarrenPig,@puai,@wei-app | | | |
-|i.MX 8M Plus|NXP|MYD-JX8MPQ-8E2D-160-I|米尔科技|puai | | | |
+|STM32F103|ST|YB-ERF01(ROS)|yahboom|@ 和尚 | | | |
+|i.MX 8M Plus|NXP|MYD-JX8MPQ-8E2D-160-I|米尔科技|@ DarrenPig| | | |
 
 ### BSP开发步骤参考如下:
 
