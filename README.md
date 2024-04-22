@@ -119,7 +119,7 @@ https://docs.yoctoproject.org/bsp-guide/bsp.html#creating-a-new-bsp-layer-using-
 - 4.1   ✅本地wsl环境搭建，22.04无法编译米尔的源文件
 - 4.2   ✅更换Ubuntu18，编译源文件
 - 4.21  ✅啃完新的手册（2周），重新本地编译
-
+- 4.22 本地环境重新下，出现问题
   ![image](https://github.com/Darrenpig/Yocto_tutorial/assets/121377489/1ece1699-4460-4260-8310-50f582562c28)
 
 ###### - 4.3   ✅上传文件包——User_Manual、NXP_Manual（使用[Github同步仓](https://github.com/Darrenpig/Yocto_tutorial)，[git lfs](https://github.com/git-lfs/git-lfs?tab=readme-ov-file) track上传大于50MBPDF文件）
