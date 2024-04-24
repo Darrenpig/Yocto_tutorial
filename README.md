@@ -92,7 +92,7 @@ https://docs.yoctoproject.org/bsp-guide/bsp.html#creating-a-new-bsp-layer-using-
 
 - [❌MYD-JX8MX 资源下载【米尔科技官方】(下面已贴)](http://down.myir-tech.com/MYD-JX8MX/)
 #### [MYD-JX8MPQ-L5.10.9-V2.0.0.【米尔科技官方】](https://down.myir-tech.com/MYD-JX8MP/)
-
+### 米尔的仓库：https://github.com/MYiR-Dev/myir-imx-manifest/tree/i.MX8M-5.10-hardknott
 ### 个人进度
 
 #### DarrenPig
