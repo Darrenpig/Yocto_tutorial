@@ -1,0 +1,139 @@
+i.MX Linux Yocto Project BSP 5.10.9_1.0.0 Release
+=====================================================
+
+Note this is release is not a production release.
+Please see the release notes for the quality statement for each baord.
+
+The following boards were tested in this release.
+
+   * NXP i.MX 8MQuad EVK (imx8mqevk)
+   * NXP i.MX 8MMini EVK (imx8mmevk)
+   * NXP i.MX 8MNano EVK (imx8mnevk)
+   * NXP i.MX 8MPlus EVK (imx8mpevk)
+   * NXP i.MX 8QuadMax MEK (imx8qmmek)
+   * NXP i.MX 8QuadXPlus MEK (imx8qxpmek)
+   * NXP i.MX 8DualX MEK (imx8dxmek)
+   * NXP i.MX 8DXL EVK (imdx8dxlevk)
+   * NXP i.MX 7ULP EVK (imx7ulpevk)
+   * NXP i.MX 7Dual SABRE Smart Device (imx7dsabresd)
+   * NXP i.MX 6QuadPlus SABRE Device (imx6qpsabresd)
+   * NXP i.MX 6QuadPlus SABRE Auto (imx6qpsabreauto)
+   * NXP i.MX 6Quad SABRE Smart Device (imx6qsabresd)
+   * NXP i.MX 6Quad SABRE Auto (imx6qsabreauto)
+   * NXP i.MX 6DualLite SABRE Smart Device (imx6dlsabresd)
+   * NXP i.MX 6DualLite SABRE Auto (imx6dlsabreauto)
+   * NXP i.MX 6SOLO SABRE Smart Device (imx6solosabresd )
+   * NXP i.MX 6SOLO SABRE Auto (imx6solosabreauto )
+   * NXP i.MX 6SoloX SABRE Smart Device (imx6sxsabresd)
+   * NXP i.MX 6SoloX SABRE Auto (imx6sxsabreauto)
+   * NXP i.MX 6UltraLite EVK (imx6ulevk)
+   * NXP i.MX 6ULL EVK (imx6ull14x14evk)
+   * NXP i.MX 6ULZ EVK (imx6ulz14x14evk)
+
+Quick Start Guide
+-----------------
+
+
+Build images
+---------------------
+
+
+Building XWayland
+---------------------------
+  DISTRO=fsl-imx-xwayland MACHINE=myd-jx8mp source sources/meta-myir/tools/myir-setup-release.sh -b build-xwayland
+  
+
+Building with Multilib support
+---------------------------
+Yocto Project is able to build libraries for different target optimizations, combing those in one system image,
+allowing the user to run both 32-bit and 64-bit applications.
+Here is an example to add multilib support (lib32).
+
+In local.conf
+- Define multilib targets
+require conf/multilib.conf
+MULTILIBS = "multilib:lib32"
+DEFAULTTUNE_virtclass-multilib-lib32 = "armv7athf-neon"
+
+- 32-bit libraries to be added into the image
+IMAGE_INSTALL_append = " lib32-glibc lib32-libgcc lib32-libstdc++"
+
+Building XEN
+------------
+
+
+Hardware Floating Point
+-----------------------
+This release enables hardware floating point by default.  This feature is enabled in both the machine 
+configurations and in the layer.conf. (Some machine files exist in the community meta-fsl-arm without this setting.)
+DEFAULTTUNE_mx6 = "cortexa9hf-neon
+
+Software floating point is not supported starting with the 4.1.15_1.0.0_ga release
+
+Restricted Codecs
+-----------------
+These codecs have contractual restrictions that require separate distribution.
+
+The Manufacturing Tool - MFGTool
+--------------------------------
+In this release MFGTool uses the community setup.  
+To build MFGTool, build the following:
+
+   bitbake fsl-image-mfgtool-initramfs
+
+End User License Agreement
+--------------------------
+During the NXP Yocto Project Community BSP setup-environment process, the NXP i.MX End User License Agreement (EULA)
+is displayed. To continue, users must agree to the conditions of this license. The agreement to the terms allows the
+Yocto build to untar packages from the NXP mirror. Please read this license agreement carefully during the
+setup process because, once accepted, all further work in the Yocto environment is tied to this accepted agreement.
+
+Chromium
+---------
+Add Chromium to your Wayland or X11-based image by adding the following lines to local.conf:
+
+IMAGE_INSTALL_append = \
+    "${@bb.utils.contains('DISTRO_FEATURES', 'wayland', ' chromium-ozone-wayland', \
+        bb.utils.contains('DISTRO_FEATURES',     'x11', ' chromium-x11', \
+                                                        '', d), d)}"
+
+Build server host requirements for chromium 74 version:
+
+- Host gcc version should be gcc 7. Ubuntu 18.04 has a default gcc 7 version.
+- Increase ulimit (number of open file descriptors) to 4098
+
+Chromium will have compilation errors, if any of the above host requirements are not met.
+
+QTWebEngine
+--------
+Qtwebengine is not built by default so add this to local.conf or image recipe. It is supported only on the machines
+that has GPU.
+ IMAGE_INSTALL_append = "packagegroup-qt5-webengine"
+
+There are many browsers available using QtWebEngine and can be found here:
+/usr/share/examples/webengine
+/usr/share/examples/webenginewidgets
+
+Qt
+--
+Note that Qt has both a commercial and open source license options.  Make the decision about which license
+to use before starting work on custom Qt applications.  Once custom Qt applications are started with an open source
+Qt license the work cannot be used with a commercial Qt license.  Work with a legal representative to understand
+the differences between each license.
+
+Note Qt is not supported on i.MX 6UltraLite and i.MX 7Dual. It works on X11 backend only but is not a supported feature.
+
+Qt with kms
+--
+Some customers wants to use QT without wayland/weston and the alternative for that is to use through kms plugin.
+This configuration is supported only on mx8 machines.
+By default, wayland plugin is enabled.We can switch to kms plugin by following these steps.
+- killall weston
+- export QT_QPA_EGLFS_ALWAYS_SET_MODE=1
+- Run any qt application using -platform eglfs
+  Example: ./Qt5_CinematicExperience -platform eglfs
+
+Systemd
+-------
+Systemd support is enabled as default but it can be disabled by commenting out the systemd settings in
+meta-sdk/conf/distro/include/fsl-imx-preferred-env.inc.
