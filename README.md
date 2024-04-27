@@ -121,7 +121,8 @@ https://docs.yoctoproject.org/bsp-guide/bsp.html#creating-a-new-bsp-layer-using-
 - 4.21  ✅啃完新的手册（2周），重新本地编译
 - 4.22  ❌本地环境重新下，出现问题
 - 4.23  ❌还是报错:环境WSL：Apr 24 00:22:40 DArren systemd[1]: Failed to start Samba NMB Daemon.  端口号299、450 已暴露，但399无反应
-  ![image](https://github.com/Darrenpig/Yocto_tutorial/assets/121377489/1ece1699-4460-4260-8310-50f582562c28)
+- 4.25  ✅解决问题，wsl环境可以直接用
+- 4.27  ✅编译SDK
 
 ###### - 4.3   ✅上传文件包——User_Manual、NXP_Manual（使用[Github同步仓](https://github.com/Darrenpig/Yocto_tutorial)，[git lfs](https://github.com/git-lfs/git-lfs?tab=readme-ov-file) track上传大于50MBPDF文件）
 
