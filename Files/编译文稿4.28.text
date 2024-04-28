@@ -1,0 +1,183 @@
+
+
+Darren
+
+cat /etc/resolv.conf
+
+
+
+<img src="C:\Users\29711\AppData\Roaming\Typora\typora-user-images\image-20240423001407797.png" alt="image-20240423001407797" style="zoom: 25%;" />
+
+创建账号并设置密码
+
+/etc/samba/smb.conf   
+
+[darren]
+path = /home/darren
+valid users = darren
+browseable = yes
+public = yes
+writable = yes
+
+sudo vim smb.conf
+
+
+
+sudo smbpasswd -a Darren
+
+ New SMB password:  
+
+Sad666
+
+Retype new SMB password: 
+
+Added user duxy.
+
+/etc/init.d/smbd restart  
+
+git config --global user.name 'DarrenPig' 
+git config --global user.email '22230635@czu.cn'
+
+git config --list  
+
+sudo apt-get remove vim-common 
+
+sudo apt-get install vim  
+
+Apr 23 01:43:00 DArren systemd[1]: Failed to start Samba NMB Daemon.
+
+
+
+$ /etc/init.d/smbd restart
+
+[ ok ] Restarting smbd (via systemctl): smbd.service.
+
+#####  sudo /etc/init.d/smbd restart
+
+[ ok ] Restarting smbd (via systemctl): smbd.service.
+darren@DArren:/etc/init.d$
+
+---
+
+sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib \ build-essential chrpath socat cpio python python3 python3-pip python3-pexpect \
+
+xz-utils debianutils iputils-ping python3-git python3-jinja2 libegl1-mesa libsdl1.2- dev \
+
+pylint3 xterm rsync curl libssl-dev
+
+---
+
+Setting up samba (2:4.7.6+dfsg~ubuntu-0ubuntu2.29) ...
+Samba is not being run as an AD Domain Controller.
+Please ignore the following error about deb-systemd-helper not finding samba-ad-dc.service.
+Job for nmbd.service failed because the control process exited with error code.
+See "systemctl status nmbd.service" and "journalctl -xe" for details.
+invoke-rc.d: initscript nmbd, action "start" failed.
+● nmbd.service - Samba NMB Daemon
+   Loaded: loaded (/lib/systemd/system/nmbd.service; disabled; vendor preset: enabled)
+   Active: failed (Result: exit-code) since Tue 2024-04-23 02:04:51 CST; 4ms ago
+     Docs: man:nmbd(8)
+           man:samba(7)
+           man:smb.conf(5)
+  Process: 2395 ExecStart=/usr/sbin/nmbd --foreground --no-process-group $NMBDOPTIONS (code=exited, status=1/FAI
+LURE)
+ Main PID: 2395 (code=exited, status=1/FAILURE)
+
+Apr 23 02:04:51 DArren systemd[1]: Starting Samba NMB Daemon...
+Apr 23 02:04:51 DArren systemd[1]: nmbd.service: Main process exited, code=exited, status=1/FAILURE
+Apr 23 02:04:51 DArren systemd[1]: nmbd.service: Failed with result 'exit-code'.
+Apr 23 02:04:51 DArren systemd[1]: Failed to start Samba NMB Daemon.
+dpkg: error processing package samba (--configure):
+ installed samba package post-installation script subprocess returned error exit status 1
+Processing triggers for libc-bin (2.27-3ubuntu1.6) ...
+Errors were encountered while processing:
+ samba
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+darren@DArren:/etc/init.d$
+
+---
+
+● nmbd.service - Samba NMB Daemon
+   Loaded: loaded (/lib/systemd/system/nmbd.service; disabled; vendor preset: enabled)
+   Active: failed (Result: exit-code) since Tue 2024-04-23 02:04:51 CST; 1min 2s ago
+     Docs: man:nmbd(8)
+           man:samba(7)
+           man:smb.conf(5)
+  Process: 2395 ExecStart=/usr/sbin/nmbd --foreground --no-process-group $NMBDOPTIONS (code=exited, status=1/FAI
+ Main PID: 2395 (code=exited, status=1/FAILURE)
+
+Apr 23 02:04:51 DArren systemd[1]: Starting Samba NMB Daemon...
+Apr 23 02:04:51 DArren systemd[1]: nmbd.service: Main process exited, code=exited, status=1/FAILURE
+Apr 23 02:04:51 DArren systemd[1]: nmbd.service: Failed with result 'exit-code'.
+Apr 23 02:04:51 DArren systemd[1]: Failed to start Samba NMB Daemon.
+lines 1-13/13 (END)
+
+---
+
+[global]
+    workgroup = WORKGROUP
+    server string = jamieli-vm
+    log file = /var/log/samba/log.%m
+    log level = 0
+    max log size = 1000
+    security = user
+    map to guest = Bad User
+    passdb backend = smbpasswd
+    smb passwd file = /etc/samba/smbpasswd
+    username map = /etc/samba/smbusers
+    guest account = nobody
+    os level = 64
+
+[homes]
+    comment = user private
+    path = /mnt/c/private/%u
+    read only = No
+
+[share]
+    comment = home share
+    guest ok = Yes
+    path = /mnt/c/share
+    read only = No
+    public = Yes
+
+
+
+apt-get install samba
+
+
+
+在/etc/samba/smb.conf 中
+
+---
+
+build-xwayland myir-setup-release.sh README-IMXBSP sources
+
+downloads README setup-environment
+
+---
+
+fsl-imx-xwayland-glibc-x86_64-meta-toolchain-cortexa53-crypto-myd-jx8mp -toolchain-5.10-gatesgarth.sh  
+
+
+
+source ~/opt_5_10/environment-setup-cortexa53-crypto-p oky-linux
+
+duxy@myir_server:~$ $CC -v  
+
+source ~environment-setup-cortexa53-crypto-p oky-linux  
+
+darren@DArren:~$
+
+
+
+fsl-imx-xwayland-glibc-x86_64-myir-image-full-cortexa53-crypto-myd-jx8mp-toolchain-5.10-gatesgarth.sh
+
+
+
+fsl-imx-xwayland-glibc-x86_64-meta-toolchain-cortexa53-crypto-myd-jx8mp-toolchain-5.10-gatesgarth.sh  
+
+./fsl-imx-xwayland-glibc-x86_64-meta-toolchain-cortexa53-crypto-myd-jx8mp-toolchain-5.10-gatesgarth.sh  
+
+---
+
+编译文稿4.28
