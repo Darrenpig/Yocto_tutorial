@@ -314,6 +314,8 @@ Soc支持， **[米尔科技](https://www.myir-tech.com%2Fproduct%2Findex.asp%3F
 ## 维护日志: 3.26 @DarrenPig Readme 去南京 MeetUp 前看 BSP 的小组短期计划，更新个人进度
 ## 维护日志: 4.3  @DarrenPig Readme 上传User_Manual、NXP_Manual，本地wsl在18上编译
 ## 维护日志: 4.16 @DarrenPig Readme 更改MY的资料包，https://github.com/Darrenpig/myir-imx-linux 本地fork了一份到Gitee
+## 维护日志：4.26 @DarrenPig Readme SIG双周例会，24.03版本发布特性，提问解决Samba和WSL的Yocoto编译问题
+## 维护日志：4.28 @DarrenPig Readme 解决Samba报错以及SDK在WSL中的烧录
 ✅ ✅ ❌
 
 ---
@@ -366,3 +368,6 @@ pip3 install sphinx_rtd_theme sphinx_multiversion sphinx_tabs -i https://pypi.tu
 
 ## @DarrenPig 周六晚上要开会
 > 4.19 我今晚编译一下
+
+## @DarrenPig SDK 编译成功4.28
+> 4.27 Samba在WSL中不用使用
