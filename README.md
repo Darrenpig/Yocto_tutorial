@@ -121,6 +121,11 @@ https://docs.yoctoproject.org/bsp-guide/bsp.html#creating-a-new-bsp-layer-using-
 - 4.23  ❌还是报错:环境WSL：Apr 24 00:22:40 DArren systemd[1]: Failed to start Samba NMB Daemon.  端口号299、450 已暴露，但399无反应
 - 4.25  ✅解决问题，wsl环境可以直接用
 - 4.27  ✅编译SDK
+- 5.20  ❌.wic烧录报错
+- 5.25  ❌环境变量bitbake无法加载
+- 5.27  ✅重新构建解压，编译环境
+- 5.30  ✅fectch 环境，代理
+- 5.51  ✅重新 bitbake full image
 
 ###### - 4.3   ✅上传文件包——User_Manual、NXP_Manual（使用[Github同步仓](https://github.com/Darrenpig/Yocto_tutorial)，[git lfs](https://github.com/git-lfs/git-lfs?tab=readme-ov-file) track上传大于50MBPDF文件）
 
@@ -236,7 +241,7 @@ https://github.com/git-lfs/git-lfs?tab=readme-ov-file
 
 ## 二、近期环节
 ### 4.12小组会议，发现资料包提供错误，并且已有5.10相关的版本适配。
-
+### 5.30 SIG例会 ，目前已有
 
 ### 2.23-25 成都 G11 MeetUp 
 国际化、信息嗅探
@@ -314,6 +319,8 @@ Soc支持， **[米尔科技](https://www.myir-tech.com%2Fproduct%2Findex.asp%3F
 ## 维护日志: 4.16 @DarrenPig Readme 更改MY的资料包，https://github.com/Darrenpig/myir-imx-linux 本地fork了一份到Gitee
 ## 维护日志：4.26 @DarrenPig Readme SIG双周例会，24.03版本发布特性，提问解决Samba和WSL的Yocoto编译问题
 ## 维护日志：4.28 @DarrenPig Readme 解决Samba报错以及SDK在WSL中的烧录
+## 维护日志：5.12 @DarrenPig Readme 几场 MeetUp、峰会的整理笔记
+## 维护日志：5.30 @DarrenPig Readme 近期进展。雪球计划群里提问，解决fecth报错
 ✅ ✅ ❌
 
 ---
