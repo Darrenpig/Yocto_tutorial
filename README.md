@@ -4,9 +4,6 @@
 #### 介绍
 
 > 旨在对南向BSP的覆盖活动，目的是扩大openEuler对南向bsp的支持范围， “雪球计划”，寓意openEuler将一步步强大，最终成为国内乃至国际顶流嵌入式操作系统
-
-
-
 ### BSP开发步骤参考如下:
 
 
@@ -74,6 +71,7 @@ https://docs.yoctoproject.org/bsp-guide/bsp.html#creating-a-new-bsp-layer-using-
 - 2.23    ✅都在看文档
 - 3.26    ❌29号前看一下BSP源码
 - 4.10    ✅加紧进度，开会交流
+- 5.30    ✅继续看编译环境
 ##  资料共享：
 
 - [openEuler Embedded在线文档【社区文档】](https://openeuler.gitee.io/yocto-meta-openeuler/master/introduction/index.html)
