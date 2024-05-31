@@ -71,7 +71,7 @@ https://docs.yoctoproject.org/bsp-guide/bsp.html#creating-a-new-bsp-layer-using-
 - 2.23    ✅都在看文档
 - 3.26    ❌29号前看一下BSP源码
 - 4.10    ✅加紧进度，开会交流
-- 5.30    ✅继续看编译环境
+- 5.30    ✅继续看编译环境，修改uboot
 ##  资料共享：
 
 - [openEuler Embedded在线文档【社区文档】](https://openeuler.gitee.io/yocto-meta-openeuler/master/introduction/index.html)
@@ -125,7 +125,7 @@ https://docs.yoctoproject.org/bsp-guide/bsp.html#creating-a-new-bsp-layer-using-
 - 5.25  ❌环境变量bitbake无法加载
 - 5.27  ✅重新构建解压，编译环境
 - 5.30  ✅fectch 环境，代理
-- 5.51  ✅重新 bitbake full image
+- 5.31  ✅重新 bitbake full image，重新编译uboot
 
 ###### - 4.3   ✅上传文件包——User_Manual、NXP_Manual（使用[Github同步仓](https://github.com/Darrenpig/Yocto_tutorial)，[git lfs](https://github.com/git-lfs/git-lfs?tab=readme-ov-file) track上传大于50MBPDF文件）
 
@@ -158,7 +158,8 @@ https://github.com/git-lfs/git-lfs?tab=readme-ov-file
 ##### -[🫥]  本地安装编译环境，测试SD卡上电
 ##### -[🫥]  硬盘满了，换了个4T的，正在重新安装虚拟机环境
 ### -[🙂]超过50MB的文件无法上传Gitee社区版，使用Github的lfs打包上传文件
-
+#### -[🙂]无法fectch: nxp-demo-experience \ 已挂代理
+#### -[🙂] nxp-demo-experience \,在imx-image-multimedia.bb中注释了，重新编译
 
 ###  imx8（MYD-JX8MP）资料己经贴下面了【百度网盘(80G左右)】，部分文档已经上传本仓库和群
 
@@ -321,6 +322,7 @@ Soc支持， **[米尔科技](https://www.myir-tech.com%2Fproduct%2Findex.asp%3F
 ## 维护日志：4.28 @DarrenPig Readme 解决Samba报错以及SDK在WSL中的烧录
 ## 维护日志：5.12 @DarrenPig Readme 几场 MeetUp、峰会的整理笔记
 ## 维护日志：5.30 @DarrenPig Readme 近期进展。雪球计划群里提问，解决fecth报错
+## 维护日志：5.31 @DarrenPig Readme 单独编译uboot 
 ✅ ✅ ❌
 
 ---
