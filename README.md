@@ -11,8 +11,6 @@
 )](https://github.com/nxp-imx/meta-imx)
 
 
-
-
 #### 介绍
 
 > 旨在对南向BSP的覆盖活动，目的是扩大openEuler对南向bsp的支持范围， “雪球计划”，寓意openEuler将一步步强大，最终成为国内乃至国际顶流嵌入式操作系统
@@ -355,3 +353,10 @@ pip3 install sphinx_rtd_theme sphinx_multiversion sphinx_tabs -i https://pypi.tu
 > 5.16 @puai 我们是不是开发版的镜像还没编出来
 ## @DarrenPig bitbake 已经可以编译SDK和镜像了
 > 6.1 请问在bb文件编译的时候PWD路径要换成具体路径吗(改了3个文件conf.bb\.bashrc\nxp-demo-experience_1.0.bb解决了)
+
+
+|                                               **Stargazers Over Time**                                                | **Contributors Over Time**                                                                                                                                                                                                                       |
+|:---------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| [![Stargazers over time](https://starchart.cc/nxp-imx/meta-imx.svg?variant=adaptive)](https://starchart.cc/nxp-imx/meta-imx) | [![Contributor over time](https://contributor-overtime-api.git-contributor.com/contributors-svg?chart=contributorOverTime&repo=nxp-imx/meta-imx)](https://git-contributor.com?chart=contributorOverTime&repo=nxp-imx/meta-imx)|
+
+About imx-meta
