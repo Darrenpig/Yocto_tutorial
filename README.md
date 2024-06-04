@@ -85,8 +85,8 @@ https://docs.yoctoproject.org/bsp-guide/bsp.html#creating-a-new-bsp-layer-using-
 - 4.10    ✅加紧进度，开会交流
 - 5.30    ✅继续看编译环境，修改uboot
 ##  资料共享：
-
-- [openEuler Embedded在线文档【社区文档】](https://openeuler.gitee.io/yocto-meta-openeuler/master/introduction/index.html)
+[![embedded-pages](https://img.shields.io/badge/embedded-pages-fedcba)](https://embedded.pages.openeuler.org/master/index.html)
+- [openEuler Embedded在线文档【社区文档】](https://embedded.pages.openeuler.org/master/index.html)
 - [SIG的双周议题](https://etherpad.openeuler.org/p/sig-Yocto-meetings)
 - [2.1组会笔记](https://gitee.com/pai_666/euler-junior/tree/master/Files)
 - [MYS-6ulx-io产品手册](https://www.myir-tech.com/down/manual/NXP/MYS-6ulx-iot_product_manual.pdf)
