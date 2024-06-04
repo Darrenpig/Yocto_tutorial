@@ -159,13 +159,12 @@ https://github.com/git-lfs/git-lfs?tab=readme-ov-file
 ##### -[🫥]  Gitub CLI好像传不了1.6G的imx-linux
 ##### -[🫥]  本地安装编译环境，测试SD卡上电
 ##### -[🫥]  硬盘满了，换了个4T的，正在重新安装虚拟机环境
-### -[🙂]超过50MB的文件无法上传Gitee社区版，使用Github的lfs打包上传文件
-#### -[🙂]无法fectch: nxp-demo-experience \ 已挂代理
+#### -[🙂] 超过50MB的文件无法上传Gitee社区版，使用Github的lfs打包上传文件
+#### -[🙂] 无法fectch: nxp-demo-experience \ 已挂代理
 #### -[🙂] nxp-demo-experience \,在imx-image-multimedia.bb中注释了，重新编译
-#### -[🙂]已经可以bitbake编译了，我们准备开始做
+#### -[🙂] 已经可以bitbake编译了，我们准备开始做内核移植了
 
 ###  imx8（MYD-JX8MP）资料己经贴下面了【百度网盘(80G左右)】，部分文档已经上传本仓库和群
-
 
 #### ✅大家可以在这补充...
 
@@ -181,14 +180,6 @@ https://github.com/git-lfs/git-lfs?tab=readme-ov-file
 ###### 02_Image_8E2D 2G DDR 全面型系统镜像，包含丰富的linux命令集，QT5.15.0运行库，python3组件
 ###### 02_Image_8E3D 3G DDR 全面型系统镜像，包含丰富的linux命令集，QT5.15.0运行库，python3组件 --【编译会 DDR 报错】
 ###### 02_Image_8E4D 4G DDR 全面型系统镜像，包含丰富的linux命令集，QT5.15.0运行库，python3组件
-#### UUU工具下载
-###### 03_Tools_UUU UUU镜像
-#### 源码下载
- 04_Sources 包含全部BSP源代码，yocto,uboot,kernel等
-#### Yocto-downlaod-5.10下载
-#### Yocto-downlaod-5.10(百度网盘) Yocto-downlaod-5.10(百度网盘提取码：X8MP)
-## 光盘镜像下载:  MYD-JX8MPQ-L5.10.9-V2.0.0.iso
-#### 百度网盘下载:  https://pan.baidu.com/s/1aLNlzcxvyjVJQ_rMudeJdA (百度网盘提取码：X8MP)
 
 >  版本号	状态	发布时间	镜像 v2.0.0	GA	2022-11-07	MYD-JX8MPQ-L5.10.9-V2.0.0.iso
 
@@ -207,7 +198,7 @@ https://github.com/git-lfs/git-lfs?tab=readme-ov-file
 
 ### 我们的NXP如果要赶上，最近要加急了。其中大部分将会在6月初（6月15日左右准备好文档的提交）
 
- 2.29SIG例会记录——>年后第一场
+ 2.29SIG例会记录——>年后第一场   -->    5.30最近一次SIG例会
 ##### 一、MICA
 
 实时操作系统，多底座。统一接口的共享内存。
@@ -274,26 +265,26 @@ Soc支持， **[米尔科技](https://www.myir-tech.com%2Fproduct%2Findex.asp%3F
 ### - 基本镜像可以运行 —→ 硬件
 - [ ] 版本，内核（不一定统一的要求下）—→ 先满足上述两个要求。
 ---
-#维护信息
+# 维护信息
 
-## 维护日志：2.1  @DarrenPig Readme、两份笔记(vim环境变量、2.1组会笔记)
-## 维护日志：2.4  @DarrenPig Readme 报名信息
+## 维护日志：2.01 @DarrenPig Readme、两份笔记(vim环境变量、2.1组会笔记)
+## 维护日志：2.04 @DarrenPig Readme 报名信息
 ## 维护日志: 2.21 @DarrenPig Readme 开发板寄送信息，开工计划
 ## 维护日志: 2.22 @DarrenPig Readme 开发板开箱，更新imx8寄送收单上的文档
 ## 维护日志: 2.23 @DarrenPig Readme 开发板 韦山东imx6_NXP相关内容链接 3份PDF上传File
 ## 维护日志: 2.28 @DarrenPig Readme 个人进度、上传了IMX6、IMX8的文件到仓库里
-## 维护日志: 3.3  @DarrenPig Readme 2.29年后例会的一些记录，关于要求和项目跟进之类的
+## 维护日志: 3.03 @DarrenPig Readme 2.29年后例会的一些记录，关于要求和项目跟进之类的
 ## 维护日志: 3.14 @DarrenPig Readme 周日组会的简要记录，个人进度。
 ## 维护日志: 3.24 @DarrenPig Readme 成都 G11&Doc Sig 的 MeetUp, 更新一些相关的内容
 ## 维护日志: 3.26 @DarrenPig Readme 去南京 MeetUp 前看 BSP 的小组短期计划，更新个人进度
-## 维护日志: 4.3  @DarrenPig Readme 上传User_Manual、NXP_Manual，本地wsl在18上编译
+## 维护日志: 4.03 @DarrenPig Readme 上传User_Manual、NXP_Manual，本地wsl在18上编译
 ## 维护日志: 4.16 @DarrenPig Readme 更改MY的资料包，https://github.com/Darrenpig/myir-imx-linux 本地fork了一份到Gitee
 ## 维护日志：4.26 @DarrenPig Readme SIG双周例会，24.03版本发布特性，提问解决Samba和WSL的Yocoto编译问题
 ## 维护日志：4.28 @DarrenPig Readme 解决Samba报错以及SDK在WSL中的烧录
 ## 维护日志：5.12 @DarrenPig Readme 几场 MeetUp、峰会的整理笔记
 ## 维护日志：5.30 @DarrenPig Readme 近期进展。雪球计划群里提问，解决fecth报错
 ## 维护日志：5.31 @DarrenPig Readme 单独编译uboot 
-## 维护日志：6.4  @DarrenPig Readme 顺利执行 bitbake miyr-full-image 编译SDK，解决48%。其他仍在编译中
+## 维护日志：6.04 @DarrenPig Readme 顺利执行 bitbake miyr-full-image 编译SDK，解决48%。其他仍在编译中
 ✅ ✅ ❌
 
 ---
@@ -313,37 +304,35 @@ pip3 install sphinx_rtd_theme sphinx_multiversion sphinx_tabs -i https://pypi.tu
   @DarrenPig 记得3月中旬报名去南邮——MeetUp（imx8我尽量给点力）
 > 2.21 @puai  @DarrenPig要开始做imx8了（imx6 被抢了）
 
-####  @wei-app 看一下 NXP 的 单板附带的质量链接 
+#####  @wei-app 看一下 NXP 的 单板附带的质量链接 
 > 2.22 @DarrenPig 你要的贴上去了——资料共享那
 
-####  今天研究一天，我明天在家也研究，下周一我们让李**给我们说说，看方向偏没有
+##### 今天研究一天，我明天在家也研究，下周一我们让李**给我们说说，看方向偏没有
 > 2.23 @puai 这两天任务
 
-#### 今天维护一下Readme，现在openEuler Embedded 都是5.10版本了
+##### 今天维护一下Readme，现在openEuler Embedded 都是5.10版本了
 > 2.27 @puai明天我们定个会。
-####  [fork 主仓参考 提交PR上去]，NXP我们的进度，参考树莓派文档风格
+##### [fork 主仓参考 提交PR上去]，NXP我们的进度，参考树莓派文档风格
 > 2.29 @DarrenPig 组会要求我们，在主仓跟进一下进度的doc,划分了四步
 #### 我们先跑一遍4.19。一周时间，4.19先上去、文件、uboot、内核、环境变量...
 > 3.14 @puai 20日前，5.10编起来
-####  @DarrenPig  @wei-app 本周抽点时间把nxp的bsp一起看一下
+#### @DarrenPig  @wei-app 本周抽点时间把nxp的bsp一起看一下
 > 3.26 @puai 昨天领导让我去南京，我说我要学习
-####  @DarrenPig 空了一起看看 nxp的那个问题哇
+#### @DarrenPig 空了一起看看 nxp的那个问题哇
 > 4.3 @wei-app 单板的几个手册能不能上到gitee上
-###  @DarrenPig 例会、个人进展我跟新上来了
+#### @DarrenPig 例会、个人进展我跟新上来了
 > 4.10 @puai 明天约个会。看看当前的进展
-###  @DarrenPig 例会、个人进展我跟新上来了
-> 4.10 @puai 明天约个会。看看当前的进展
-###  @DarrenPig 米尔的子资料已经更新了，新的我今晚编译一下
-> 4.15 @wei-app 你编译出来了吗，你编译出来了吗？
-### @DarrenPig 周六晚上要开会
+#### @DarrenPig 米尔的子资料已经更新了，新的我今晚编译一下
+> 4.15 @wei-app 你编译出来了吗？
+#### @DarrenPig 周六晚上要开会
 > 4.19 我今晚编译一下
-### @DarrenPig SDK 编译成功4.28
+#### @DarrenPig SDK 编译成功4.28
 > 4.27 Samba在WSL中不用使用
 ### Fetcher faiture for,URu...
 > 5.5 @DarrenPig BB NO NETWORk "1"本地编译试一下
 ### Kunpeng开发者大会·北京 , 欧拉派Hi-Euler, 昇思LSTM, MindFormers Ai模型
 > 5.9 @puai @DarrenPig 交流学习 Devkit, Euler Copilot, Ascend 昇腾CANN, 香橙派Aipro
-### 最近大家没声音了？都很忙哇？
+##### 最近大家没声音了？都很忙哇？
 > 5.16 @puai 我们是不是开发版的镜像还没编出来
 ## @DarrenPig bitbake 已经可以编译SDK和镜像了
 > 6.1 请问在bb文件编译的时候PWD路径要换成具体路径吗(改了3个文件conf.bb\.bashrc\nxp-demo-experience_1.0.bb解决了)
