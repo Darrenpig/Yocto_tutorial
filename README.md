@@ -274,24 +274,24 @@ Soc支持， **[米尔科技](https://www.myir-tech.com%2Fproduct%2Findex.asp%3F
 ---
 ### 维护信息
 
-##### 维护日志：2.01 @DarrenPig Readme、两份笔记(vim环境变量、2.1组会笔记)
-##### 维护日志：2.04 @DarrenPig Readme 报名信息
-##### 维护日志: 2.21 @DarrenPig Readme 开发板寄送信息，开工计划
-##### 维护日志: 2.22 @DarrenPig Readme 开发板开箱，更新imx8寄送收单上的文档
-##### 维护日志: 2.23 @DarrenPig Readme 开发板 韦山东imx6_NXP相关内容链接 3份PDF上传File
-##### 维护日志: 2.28 @DarrenPig Readme 个人进度、上传了IMX6、IMX8的文件到仓库里
-##### 维护日志: 3.03 @DarrenPig Readme 2.29年后例会的一些记录，关于要求和项目跟进之类的
-##### 维护日志: 3.14 @DarrenPig Readme 周日组会的简要记录，个人进度。
-##### 维护日志: 3.24 @DarrenPig Readme 成都 G11&Doc Sig 的 MeetUp, 更新一些相关的内容
-##### 维护日志: 3.26 @DarrenPig Readme 去南京 MeetUp 前看 BSP 的小组短期计划，更新个人进度
-##### 维护日志: 4.03 @DarrenPig Readme 上传User_Manual、NXP_Manual，本地wsl在18上编译
-##### 维护日志: 4.16 @DarrenPig Readme 更改MY的资料包，https://github.com/Darrenpig/myir-imx-linux 本地fork了一份到Gitee
-##### 维护日志：4.26 @DarrenPig Readme SIG双周例会，24.03版本发布特性，提问解决Samba和WSL的Yocoto编译问题
-##### 维护日志：4.28 @DarrenPig Readme 解决Samba报错以及SDK在WSL中的烧录
-##### 维护日志：5.12 @DarrenPig Readme 几场 MeetUp、峰会的整理笔记
-##### 维护日志：5.30 @DarrenPig Readme 近期进展。雪球计划群里提问，解决fecth报错
-##### 维护日志：5.31 @DarrenPig Readme 单独编译uboot 
-##### 维护日志：6.04 @DarrenPig Readme 顺利执行 bitbake miyr-full-image 编译SDK，解决48%。其他仍在编译中
+#### 维护日志: 2.01 @DarrenPig Readme、两份笔记(vim环境变量、2.1组会笔记)
+#### 维护日志: 2.04 @DarrenPig Readme 报名信息
+#### 维护日志: 2.21 @DarrenPig Readme 开发板寄送信息，开工计划
+#### 维护日志: 2.22 @DarrenPig Readme 开发板开箱，更新imx8寄送收单上的文档
+#### 维护日志: 2.23 @DarrenPig Readme 开发板 韦山东imx6_NXP相关内容链接 3份PDF上传File
+#### 维护日志: 2.28 @DarrenPig Readme 个人进度、上传了IMX6、IMX8的文件到仓库里
+#### 维护日志: 3.03 @DarrenPig Readme 2.29年后例会的一些记录，关于要求和项目跟进之类的
+#### 维护日志: 3.14 @DarrenPig Readme 周日组会的简要记录，个人进度。
+#### 维护日志: 3.24 @DarrenPig Readme 成都 G11&Doc Sig 的 MeetUp, 更新一些相关的内容
+#### 维护日志: 3.26 @DarrenPig Readme 去南京 MeetUp 前看 BSP 的小组短期计划，更新个人进度
+#### 维护日志: 4.03 @DarrenPig Readme 上传User_Manual、NXP_Manual，本地wsl在18上编译
+#### 维护日志: 4.16 @DarrenPig Readme 更改MY的资料包，https://github.com/Darrenpig/myir-imx-linux 本地fork了一份到Gitee
+#### 维护日志: 4.26 @DarrenPig Readme SIG双周例会，24.03版本发布特性，提问解决Samba和WSL的Yocoto编译问题
+#### 维护日志: 4.28 @DarrenPig Readme 解决Samba报错以及SDK在WSL中的烧录
+#### 维护日志: 5.12 @DarrenPig Readme 几场 MeetUp、峰会的整理笔记
+#### 维护日志: 5.30 @DarrenPig Readme 近期进展。雪球计划群里提问，解决fecth报错
+#### 维护日志: 5.31 @DarrenPig Readme 单独编译uboot 
+#### 维护日志: 6.04 @DarrenPig Readme 顺利执行 bitbake miyr-full-image 编译SDK，解决48%。其他仍在编译中
 ✅ ✅ ❌
 
 ---
