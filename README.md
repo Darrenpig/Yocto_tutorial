@@ -1,6 +1,18 @@
 # Euler-junior_NXP
 ![NXP](image/NXP.png)
-## openEluer Embedded BSP[雪球计划](https://gitee.com/openeuler/yocto-meta-openeuler/issues/I90DOU#comment-loadder)
+## openEuler Embedded BSP[雪球计划](https://gitee.com/openeuler/yocto-meta-openeuler/issues/I90DOU#comment-loadder)
+[![雪球计划](https://img.shields.io/badge/%E9%9B%AA%E7%90%83%E8%AE%A1%E5%88%92-issues%2FI90DOU-blue
+)](https://gitee.com/openeuler/yocto-meta-openeuler/issues/I90DOU#comment-loadder)
+[![NXP-meta_freescale](https://img.shields.io/badge/NXP-meta_freescale-brightgreen
+)](https://github.com/Freescale/meta-freescale)
+[![NXP-meta_freescale](https://img.shields.io/badge/yocto_meta_SIG-openeuler-violet
+)](https://gitee.com/openeuler/yocto-meta-openeuler)
+[![NXP meta-imx](https://img.shields.io/badge/NXP-meta_imx-8A2BE2
+)](https://github.com/nxp-imx/meta-imx)
+
+
+
+
 #### 介绍
 
 > 旨在对南向BSP的覆盖活动，目的是扩大openEuler对南向bsp的支持范围， “雪球计划”，寓意openEuler将一步步强大，最终成为国内乃至国际顶流嵌入式操作系统
