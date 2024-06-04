@@ -126,6 +126,8 @@ https://docs.yoctoproject.org/bsp-guide/bsp.html#creating-a-new-bsp-layer-using-
 - 5.27  ✅重新构建解压，编译环境
 - 5.30  ✅fectch 环境，代理
 - 5.31  ✅重新 bitbake full image，重新编译uboot
+- 6.3   ✅修改bitbake文件，完成相关的路径修改
+- 6.4   ✅bitbake miyr-full-image进行编译❌卡在48%
 
 ###### - 4.3   ✅上传文件包——User_Manual、NXP_Manual（使用[Github同步仓](https://github.com/Darrenpig/Yocto_tutorial)，[git lfs](https://github.com/git-lfs/git-lfs?tab=readme-ov-file) track上传大于50MBPDF文件）
 
@@ -160,6 +162,7 @@ https://github.com/git-lfs/git-lfs?tab=readme-ov-file
 ### -[🙂]超过50MB的文件无法上传Gitee社区版，使用Github的lfs打包上传文件
 #### -[🙂]无法fectch: nxp-demo-experience \ 已挂代理
 #### -[🙂] nxp-demo-experience \,在imx-image-multimedia.bb中注释了，重新编译
+#### -[🙂]已经可以bitbake编译了，我们准备开始做
 
 ###  imx8（MYD-JX8MP）资料己经贴下面了【百度网盘(80G左右)】，部分文档已经上传本仓库和群
 
@@ -176,7 +179,7 @@ https://github.com/git-lfs/git-lfs?tab=readme-ov-file
 ##### MYD-JX8MPQ文档 MYD-JX8MPQ软硬件手册，包含电路图，PIN脚定义，数据手册，开发手册,3D结构等
 #### 镜像下载
 ###### 02_Image_8E2D 2G DDR 全面型系统镜像，包含丰富的linux命令集，QT5.15.0运行库，python3组件
-###### 02_Image_8E3D 3G DDR 全面型系统镜像，包含丰富的linux命令集，QT5.15.0运行库，python3组件
+###### 02_Image_8E3D 3G DDR 全面型系统镜像，包含丰富的linux命令集，QT5.15.0运行库，python3组件 --【编译会 DDR 报错】
 ###### 02_Image_8E4D 4G DDR 全面型系统镜像，包含丰富的linux命令集，QT5.15.0运行库，python3组件
 #### UUU工具下载
 ###### 03_Tools_UUU UUU镜像
@@ -191,31 +194,6 @@ https://github.com/git-lfs/git-lfs?tab=readme-ov-file
 
 ![image](https://github.com/Darrenpig/Yocto_tutorial/assets/121377489/7b1c2318-b87a-4caa-a805-02b768f8932c)
 
-
-# MYD-JX8MX 资源下载 Resource Download
-
-## 开发资源 Development Resource
-
-| File      | Download Mirror                                              | Chinese                                                      | English                                                      |
-| :-------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| MYD-JX8MX | [百度网盘(提取码:ea62)](https://pan.baidu.com/s/1Z5L-CvBNSx-O21GWYYXcKQ) | MYD-JX8MX 开发资源包                                         | MYD-JX8MX Development Package                                |
-|           |                                                              | [MYC-JX8MX 产品数据手册](http://down.myir-tech.com/MYD-JX8MX/01-Document/User_Manual/Chinese/MYC-JX8MX-Product-Manual-zh-V1.0.pdf) | [MYC-JX8MX Product Manual](http://down.myir-tech.com/MYD-JX8MX/01-Document/User_Manual/English/MYC-JX8MX-Product-Manual-en-V1.0.pdf) |
-|           |                                                              | [MYD-JX8MX 产品数据手册](http://down.myir-tech.com/MYD-JX8MX/01-Document/User_Manual/Chinese/MYD-JX8MX-Product-Manual-zh-V1.1.pdf) | [MYD-JX8MX Product Manual](http://down.myir-tech.com/MYD-JX8MX/01-Document/User_Manual/English/MYD-JX8MX-Product-Manual-en-V1.1.pdf) |
-|           |                                                              | [MYD-JX8MX Linux开发手册](http://down.myir-tech.com/MYD-JX8MX/01-Document/User_Manual/Chinese/MYD-JX8MX-Software-Manual-zh-V1.2.pdf) | [MYD-JX8MX Linux Develop Guide](http://down.myir-tech.com/MYD-JX8MX/01-Document/User_Manual/English/MYD-JX8MX-Software-Manual-en-V1.2.pdf) |
-
-## 开发文档 Development Document
-
-| File          | Download Mirror                                              | Chinese                                  | English                                                      |
-| :------------ | :----------------------------------------------------------- | :--------------------------------------- | :----------------------------------------------------------- |
-| MYD-JX8MX文档 | [01-Document.zip](http://down.myir-tech.com/MYD-JX8MX/01-Document.zip) | MYD-JX8MX开发板和MYC-JX8MX核心板开发文档 | The MYD-JX8MX carrier board and MYC-JX8MX SoM development document |
-
-## 应用笔记 Application Note【估计也是我们的任务】
-
-| File | Download Mirror | Chinese | English |
-| :--- | :-------------- | :------ | :------ |
-|      |                 |         |         |
-|      |                 |         |         |
-
 ### 系统镜像 System Binary Image 【这是我们的任务】
 
 构建流程图
@@ -225,40 +203,44 @@ https://github.com/git-lfs/git-lfs?tab=readme-ov-file
 ---
 ## 最近活动：
 
+### 5.30 SIG例会 ，目前已有相当数量的image提交，24.03的版本发布将会预计6月中旬发布
 
+### 我们的NXP如果要赶上，最近要加急了。其中大部分将会在6月初（6月15日左右准备好文档的提交）
 
-### 2.29SIG例会记录——>年后第一场
-
+ 2.29SIG例会记录——>年后第一场
 ##### 一、MICA
 
 实时操作系统，多底座。统一接口的共享内存。
 
-
-###### 使用的方式：
-
-####### 文档MICA，使用QEMU部署、RTOS部署等
-
-
+使用的方式：文档MICA，使用QEMU部署、RTOS部署等
 
 ## 二、近期环节
+```mermaid 
+graph TB  
+    Meeting412["4.12小组会议"]  
+    ErrorFound["发现资料包提供错误"]  
+    Version510["已有5.10版本适配"]  
+    SIGMeeting530["5.30 SIG例会"]  
+    G11MeetUp["2.23-25 成都 G11 MeetUp"]  
+    EmbeddedSigMeetup["4.2 南京南邮Embedded-Sig MeetUp"]  
+    OulaPaiXingShan["欧拉派、星闪"]  
+    KunpengDevCon["5.10 Kunpeng开发者大会"]
+    Meeting412 --> ErrorFound  
+    ErrorFound --> Version510  
+    SIGMeeting530 --> Version510
+    G11MeetUp --> IntlInfoSniff  
+    EmbeddedSigMeetup --> OulaPaiXingShan  
+    KunpengDevCon --> Version510
+```
 ### 4.12小组会议，发现资料包提供错误，并且已有5.10相关的版本适配。
 ### 5.30 SIG例会 ，目前已有
-
 ### 2.23-25 成都 G11 MeetUp 
 国际化、信息嗅探
 ### 4.2 南京南邮Embedded-Sig MeetUp  
 欧拉派、星闪
+### 5.10 Kunpeng开发者大会
 
 ---
-
-#### 发言：雪球计划签到(只有我们到了)
-
-NXP的看过之后，这些文件是在19年开发myd-jxmx_4.19.35时用到的文件。
-
----
-
-
-
 
 # 三、要求项目跟进【周末我来看看】
 
@@ -272,27 +254,17 @@ NXP、大部分都在Linux_openEuler里有驱动
 
 ### Yocto引入BSP层，按树莓派、瑞星微，引入官方的层，代码欧拉化
 
-## 驱动、引进  注意NXP里 的软件层
+## 驱动、引进  注意 NXP 里 的软件层
 
 ### 官方的资料的文档......欧拉的文档要相应的跟进
 
-
-> 
 > 提交欧拉的板块、最小系统的拉起、官方地方特定工程
-> 
 > 内核参考、如果内核成熟可以简略
-
-# 5月15日截至
-
-## [fork 主仓参考 提交PR上去]，NXP我们的进度，参考树莓派文档风格
-
+## [fork 主仓参考 提交PR上去]，NXP 我们的进度，参考树莓派、海鸥派文档风格
 ---
-
-
 2.1SIG组会
 有关摘要：
 ......
-
 ###  **雪球计划 南向bsp**  支持范围（bsp-都有环境 —→ yocto）
 Soc支持， **[米尔科技](https://www.myir-tech.com%2Fproduct%2Findex.asp%3Fanclassid%3D100)** 赞助：选择硬件板子 —→ issues统计Gitee ID
 - → 可以传递）
@@ -300,9 +272,7 @@ Soc支持， **[米尔科技](https://www.myir-tech.com%2Fproduct%2Findex.asp%3F
 ## 项目要求：
 ### - 合入  master  主线 —→ 代码
 ### - 基本镜像可以运行 —→ 硬件
-
 - [ ] 版本，内核（不一定统一的要求下）—→ 先满足上述两个要求。
-
 ---
 #维护信息
 
@@ -323,13 +293,13 @@ Soc支持， **[米尔科技](https://www.myir-tech.com%2Fproduct%2Findex.asp%3F
 ## 维护日志：5.12 @DarrenPig Readme 几场 MeetUp、峰会的整理笔记
 ## 维护日志：5.30 @DarrenPig Readme 近期进展。雪球计划群里提问，解决fecth报错
 ## 维护日志：5.31 @DarrenPig Readme 单独编译uboot 
+## 维护日志：6.4  @DarrenPig Readme 顺利执行 bitbake miyr-full-image 编译SDK，解决48%。其他仍在编译中
 ✅ ✅ ❌
 
 ---
 
 ## P.S.:好玩的文档
 社区文档（sphinx）怎么编译
-
 ```
 sudo apt-get install python3-sphinx
 pip3 install sphinx_rtd_theme sphinx_multiversion sphinx_tabs -i https://pypi.tuna.tsinghua.edu.cn/simple
@@ -351,30 +321,29 @@ pip3 install sphinx_rtd_theme sphinx_multiversion sphinx_tabs -i https://pypi.tu
 
 #### 今天维护一下Readme，现在openEuler Embedded 都是5.10版本了
 > 2.27 @puai明天我们定个会。
-
 ####  [fork 主仓参考 提交PR上去]，NXP我们的进度，参考树莓派文档风格
 > 2.29 @DarrenPig 组会要求我们，在主仓跟进一下进度的doc,划分了四步
-
 #### 我们先跑一遍4.19。一周时间，4.19先上去、文件、uboot、内核、环境变量...
 > 3.14 @puai 20日前，5.10编起来
-
-###  @DarrenPig  @wei-app 本周抽点时间把nxp的bsp一起看一下
+####  @DarrenPig  @wei-app 本周抽点时间把nxp的bsp一起看一下
 > 3.26 @puai 昨天领导让我去南京，我说我要学习
-
-###  @DarrenPig 空了一起看看 nxp的那个问题哇
+####  @DarrenPig 空了一起看看 nxp的那个问题哇
 > 4.3 @wei-app 单板的几个手册能不能上到gitee上
-
-##  @DarrenPig 例会、个人进展我跟新上来了
+###  @DarrenPig 例会、个人进展我跟新上来了
 > 4.10 @puai 明天约个会。看看当前的进展
-
-##  @DarrenPig 例会、个人进展我跟新上来了
+###  @DarrenPig 例会、个人进展我跟新上来了
 > 4.10 @puai 明天约个会。看看当前的进展
-
-##  @DarrenPig 米尔的子资料已经更新了，新的我今晚编译一下
+###  @DarrenPig 米尔的子资料已经更新了，新的我今晚编译一下
 > 4.15 @wei-app 你编译出来了吗，你编译出来了吗？
-
-## @DarrenPig 周六晚上要开会
+### @DarrenPig 周六晚上要开会
 > 4.19 我今晚编译一下
-
-## @DarrenPig SDK 编译成功4.28
+### @DarrenPig SDK 编译成功4.28
 > 4.27 Samba在WSL中不用使用
+### Fetcher faiture for,URu...
+> 5.5 @DarrenPig BB NO NETWORk "1"本地编译试一下
+### Kunpeng开发者大会·北京 , 欧拉派Hi-Euler, 昇思LSTM, MindFormers Ai模型
+> 5.9 @puai @DarrenPig 交流学习 Devkit, Euler Copilot, Ascend 昇腾CANN, 香橙派Aipro
+### 最近大家没声音了？都很忙哇？
+> 5.16 @puai 我们是不是开发版的镜像还没编出来
+## @DarrenPig bitbake 已经可以编译SDK和镜像了
+> 6.1 请问在bb文件编译的时候PWD路径要换成具体路径吗(改了3个文件conf.bb\.bashrc\nxp-demo-experience_1.0.bb解决了)
