@@ -222,6 +222,13 @@ graph TB
     G11MeetUp --> IntlInfoSniff  
     EmbeddedSigMeetup --> OulaPaiXingShan  
     KunpengDevCon --> Version510
+    style Version510 fill:#f9f,stroke:#333,stroke-width:2px  
+    style SIGMeeting530 fill:#ccf,stroke:#333,stroke-width:2px  
+    style KunpengDevCon fill:#ccf,stroke:#333,stroke-width:2px  
+    linkStyle 0 stroke-dasharray: 5, 5  
+    linkStyle 1 stroke-dasharray: 5, 5  
+    linkStyle 2 stroke-dasharray: 5, 5
+
 ```
 ### 4.12小组会议，发现资料包提供错误，并且已有5.10相关的版本适配。
 ### 5.30 SIG例会 ，目前已有
