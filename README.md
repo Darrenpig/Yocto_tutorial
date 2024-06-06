@@ -302,6 +302,7 @@ Soc支持， **[米尔科技](https://www.myir-tech.com%2Fproduct%2Findex.asp%3F
 #### 维护日志: 5.30 @DarrenPig Readme 近期进展。雪球计划群里提问，解决fecth报错
 #### 维护日志: 5.31 @DarrenPig Readme 单独编译uboot 
 #### 维护日志: 6.04 @DarrenPig Readme 顺利执行 bitbake miyr-full-image 编译SDK，解决48%。其他仍在编译中
+#### 维护日志：6.06 @DarrenPig Readme 继续编译，今天24.02发布 
 ✅ ✅ ❌
 
 ---
