@@ -194,8 +194,7 @@ https://github.com/git-lfs/git-lfs?tab=readme-ov-file
 >  版本号	状态	发布时间	镜像 v2.0.0	GA	2022-11-07	MYD-JX8MPQ-L5.10.9-V2.0.0.iso
 
 ![image](https://github.com/Darrenpig/Yocto_tutorial/assets/121377489/7b1c2318-b87a-4caa-a805-02b768f8932c)
-
-### 系统镜像 System Binary Image 【这是我们的任务】
+![输入图片说明](image/%E5%BF%AB%E9%80%9F%E6%89%8B%E5%86%8C.png)
 
 构建流程图
 
@@ -303,6 +302,7 @@ Soc支持， **[米尔科技](https://www.myir-tech.com%2Fproduct%2Findex.asp%3F
 #### 维护日志: 5.31 @DarrenPig Readme 单独编译uboot 
 #### 维护日志: 6.04 @DarrenPig Readme 顺利执行 bitbake miyr-full-image 编译SDK，解决48%。其他仍在编译中
 #### 维护日志：6.06 @DarrenPig Readme 继续编译，今天24.02发布 
+#### 维护日志：6.12 @DarrenPig Readme NXP_DEMO 解决 
 ✅ ✅ ❌
 
 ---
