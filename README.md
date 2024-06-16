@@ -138,6 +138,7 @@ https://docs.yoctoproject.org/bsp-guide/bsp.html#creating-a-new-bsp-layer-using-
 - 5.31  ✅重新 bitbake full image，重新编译uboot
 - 6.3   ✅修改bitbake文件，完成相关的路径修改
 - 6.4   ✅bitbake miyr-full-image进行编译❌卡在48%
+- 6.12  ✅单独编译所有的包，qt-base包报错
 
 ###### - 4.3   ✅上传文件包——User_Manual、NXP_Manual（使用[Github同步仓](https://github.com/Darrenpig/Yocto_tutorial)，[git lfs](https://github.com/git-lfs/git-lfs?tab=readme-ov-file) track上传大于50MBPDF文件）
 
